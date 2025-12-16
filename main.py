@@ -1134,10 +1134,27 @@ def scrape_mba_colleges():
     finally:
         driver.quit()
 
-if __name__ == "__main__":
+import time
+import os
+
+DATA_FILE =  "iim_ahmedabad_full_data.json"
+UPDATE_INTERVAL = 6 * 60 * 60  # 6 hours
+
+def auto_update_scraper():
+    # Check last modified time
+    # if os.path.exists(DATA_FILE):
+    #     last_mod = os.path.getmtime(DATA_FILE)
+    #     if time.time() - last_mod < UPDATE_INTERVAL:
+    #         print("⏱️ Data is recent, no need to scrape")
+    #         return
+
+    print("🔄 Scraping started")
     data = scrape_mba_colleges()
-
-    with open("iim_ahmedabad_full_data.json", "w", encoding="utf-8") as f:
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+    print("✅ Data scraped & saved successfully")
 
-    print("✅ ALL DATA SCRAPED SUCCESSFULLY")
+if __name__ == "__main__":
+    while True:
+        auto_update_scraper()
+        time.sleep(UPDATE_INTERVAL)
