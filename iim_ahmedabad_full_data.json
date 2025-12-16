@@ -1,0 +1,2843 @@
+{
+  "courses": [
+    {
+      "course_name": "MBA/PGDM (4 courses)",
+      "fees": "12 L - 27.5 L",
+      "eligibility": {
+        "graduation": "50 %",
+        "exams": [
+          "CAT",
+          "GATE"
+        ]
+      }
+    },
+    {
+      "course_name": "Executive MBA/PGDM (1 course)",
+      "fees": "35 L",
+      "eligibility": {}
+    },
+    {
+      "course_name": "Certificate (4 courses)",
+      "fees": "1.3 L - 20 L",
+      "eligibility": {
+        "graduation": "50 %",
+        "exams": [
+          "CAT"
+        ]
+      }
+    }
+  ],
+  "fees": [
+    {
+      "course": "MBA/PGDM",
+      "total_tuition_fees": "₹ 12 L - 27.5 L"
+    },
+    {
+      "course": "Certificate",
+      "total_tuition_fees": "₹ 64 K - 20 L"
+    },
+    {
+      "course": "MMS",
+      "total_tuition_fees": "₹ 20 L"
+    },
+    {
+      "course": "Executive MBA/PGDM",
+      "total_tuition_fees": "₹ 35 L"
+    }
+  ],
+  "review_summary": {
+    "college_name": "IIM Ahmedabad",
+    "overall_rating": "4.6",
+    "total_verified_reviews": "119",
+    "rating_distribution": {
+      "4-5": "96",
+      "3-4": "17",
+      "2-3": "6"
+    },
+    "category_ratings": {
+      "Placements": "4.4",
+      "Infrastructure": "4.4",
+      "Faculty & Course": "4.5",
+      "Campus Life": "4.4",
+      "Value for Money": "4.5"
+    }
+  },
+  "reviews": [
+    {
+      "reviewer_name": "Ravishek Kumar",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "4.6",
+      "review_title": "Review of IIM Ahmedabad - Indian Institute of Management.",
+      "review_date": "Reviewed on14 Nov 2025",
+      "detailed_review": {
+        "Placements": "100% placement is guaranteed in this college because they take a lot of charge in the field, which is why they have achieved 100% in this field. They give extraordinary classes and a fantastic curriculum to meet industry demands. Top recruiting companies are like Goldman Sachs and Zomato, etc. Students get internships in their core subjects with good ranks and packages. Top roles like business development manager and registrar are offered.",
+        "Infrastructure": "The hostel and college provide a wonderful experience, as they give fantastic infrastructure and facilities like Wi-Fi, a library, and an industry-driven cell. Companies visit our campus to take students for internship purposes, and then they get placed in the company. Sports and extracurricular activities are also present, in which we have the opportunity to play at the state and national levels.",
+        "Faculty": "Exams are very strict, and real-world application-based problems are asked for the overall development of the students, so that they get placed in the most reputable companies based on their talent and hard work. The course curriculum is very relevant, and companies visit our campus for placement purposes around the last week of every month. Semester exams are tough, but those who work hard and study regularly can easily clear the exam.",
+        "Other": "I chose this course to get a better placement in top companies. The best thing about the course is that it helps in getting placed in companies. It would be better if the college introduced a system where we can have live interactions with the company HR to look over the program run there, so that we can gain experience. Events and fests are also held in the college."
+      }
+    },
+    {
+      "reviewer_name": "Gautam Surendra Bapat",
+      "course": "Faculty Development Programme in Pedagogy and Research Methods",
+      "overall_rating": "4.6",
+      "review_title": "Absolutely satisfied with the campus life and best college for doing business studies.",
+      "review_date": "Reviewed on8 Feb 2025",
+      "detailed_review": {
+        "Placements": "Placements here at IIM Ahmedabad are great. Maximum students are placed before the completion of their degree. The highest package in 2024 was 42 LPA. The average package is 14 LPA. Internships are available for students in various companies, or they can work with faculty members in the form of internships.",
+        "Infrastructure": "Infrastructure is best in class and IIM Ahmedabad is situated in a large area, which includes a stadium, library, playgrounds, sitting area, canteen, hostel, etc. All types of facilities are provided to the students. Good quality of food is provided to the students.",
+        "Faculty": "Faculty members here at IIM Ahmedabad are great. They are well-educated and quite experienced. But they are too busy doing their work which impacts teaching quality. They don't have enough time for the problems of students. Curriculum is totally relevant and it makes students industry-ready. Semester exams are tough and proper study is required all around the year.",
+        "Other": "Fares and concerts organized by IIM Ahmedabad are amazing."
+      }
+    },
+    {
+      "reviewer_name": "Varun anand",
+      "course": "Faculty Development Programme in Pedagogy and Research Methods",
+      "overall_rating": "3.8",
+      "review_title": "Review of IIM Ahmedabad - Indian Institute of Management.",
+      "review_date": "Reviewed on5 Feb 2025",
+      "detailed_review": {
+        "Placements": "The college provided good placements to all students which was greater than 85% in the year. The highest package offered in my course was 14 LPA. The average package was 5 LPA. Top recruiting companies were from India. Internship percentage was 90%.",
+        "Infrastructure": "The facilities available in my college were so super. Infrastructure of college was very beautiful. Wi-Fi, classrooms, and library were present for all students. The quality of the facility in the hostel was very good. Food was healthy. Medical facility was available. Sports and games were present in my course.",
+        "Faculty": "Teachers in my college were so helpful, qualified, and knowledgeable. Teachers in my course had great teaching qualities. This course curriculum was not relevant but students were industry-ready. Semester exams in my college were very easy. Pass percentage in semester to get pass was 35%.",
+        "Other": "There was no wish to improve in my course. Events were so super and festivals were also celebrated. Campus crowd in my college was very good. Scholarships were provided to the top students of the college."
+      }
+    },
+    {
+      "reviewer_name": "Surendra gautam",
+      "course": "Faculty Development Programme in Pedagogy and Research Methods",
+      "overall_rating": "3.6",
+      "review_title": "Review of IIM Ahmedabad.",
+      "review_date": "Reviewed on5 Feb 2025",
+      "detailed_review": {
+        "Placements": "Above 80% of students got placed from this course. The highest package offered is 17 LPA and the lowest is 2 LPA. Top recruiting companies are hiring students for this course. More than 80% secured internships.",
+        "Infrastructure": "Facilities are available in this course. Infrastructure available in my course is good. Wi-Fi, classroom as well as library are available in this course. The quality of canteen food is good in taste. Medical facilities are available. Sports and games are also available in my course.",
+        "Faculty": "Teachers in my course are so helpful and qualified and all teachers have greater teaching quality. Course curriculum is relevant and it makes students industry-ready. Semester exams in this course are easy. Pass percent is more than 80% in my course.",
+        "Other": "The best thing about the course is that we can get practical knowledge. There is no wish to improve. Campus crowd is good. Scholarship is available in this course."
+      }
+    },
+    {
+      "reviewer_name": "Gautam Surendra Bapat",
+      "course": "Faculty Development Programme in Pedagogy and Research Methods",
+      "overall_rating": "3.6",
+      "review_title": "Very dissatisfied because of hygiene issues.",
+      "review_date": "Reviewed on31 Dec 2024",
+      "detailed_review": {
+        "Placements": "Our course had a placement rate of about 60%. The highest salary package was 8.5 lacs, the average was 5.2 lacs, and the lowest was 2.5 lacs. The top recruiters were Capgemini, Wipro, and Infosys. The top roles offered were team executive director.",
+        "Infrastructure": "The labs and classrooms are not cleaned daily, and the washrooms don't have proper water supply. Wi-Fi facilities are only available for faculty members, and the food available in our department is of average quality.",
+        "Faculty": "The teachers are very knowledgeable and qualified enough. The college staff and faculty members are very polite and helpful. The course curriculum is relevant, and many activities are conducted every month."
+      }
+    },
+    {
+      "reviewer_name": "GAUTAM SURENDRA BAPAT",
+      "course": "Faculty Development Programme in General Management",
+      "overall_rating": "5",
+      "review_title": "LOVE doing my course at IIM Ahmedabad.",
+      "review_date": "Reviewed on19 Dec 2024",
+      "detailed_review": {
+        "Placements": "IIM Ahmedabad is one of the best institutes for getting good placements with better packages. The highest package here is 1.3 crore, the average package is 45 LPA, and the lowest package is 30 LPA. Many top companies like Google, Microsoft, TCS, Intel, etc. come for placements every year. Students who graduate from this college are offered high-level company management and finance roles. The percentage of students who get placed is almost 100 percent, and students get internships at the end of every academic year.",
+        "Infrastructure": "The college infrastructure is really attractive. Classrooms, library, labs, and every place in the college are neatly maintained, and hostels in the college are equipped with good facilities, making students comfortable to stay in. The mess food served is acceptable in taste and has many kinds of food, covering both North Indian and South Indian food. Canteens are present at many places on the campus, and medical facilities are provided to all the students inside the campus itself, with a medical center. The sports and games area is within the campus, and students are free to play.",
+        "Faculty": "The faculty in our college are really like friends to us. They are very kind and friendly with all the students. They all hold a Ph.D. degree in their subjects and are highly knowledgeable individuals. Their teaching and explaining skills are really good and understandable. The course schedule is designed by the faculty in charge with the help of all the other faculty, and it's very easy to complete the course for all the students. Exams are also very easy to attempt, and the pass percentage in the semester is around 40 percent. A student can easily pass with minimal knowledge.",
+        "Other": "The course which I chose is for my career betterment, and I have full interest in this course. This course increases the chance of achieving my goal of becoming a good faculty at a good university. The course is really well designed and does not need any further development. The campus in which I stay is really amazing. It has many events and fests that take place every semester. Campus life and the surroundings of the campus are really great. Students are free and encouraged to take part in extracurricular activities too. Connectivity from the campus to other places around is good."
+      }
+    },
+    {
+      "reviewer_name": "Abhay pariwal",
+      "course": "Post Graduate Program in Management for Executives (MBA-PGPX)",
+      "overall_rating": "4",
+      "review_title": "Great campus life with student with diverse backgrounds.",
+      "review_date": "Reviewed on19 Sep 2024",
+      "detailed_review": {
+        "Placements": "Students become eligible for campus placements from the 5th semester while internships are available from the 3rd semester onwards. Companies like TCS, Deloitte, Infosys, and Wipro visit the campus for placements. Around 80 - 90 percent of the students who participate in the placement process get placed successfully.",
+        "Infrastructure": "The campus life is beautiful yet challenging. While cultural activities and events are frequent and enjoyable, the workload related to assignments, exams and projects can feel overwhelming. Clubs and committees play a crucial role in managing campus activities and ensuring a vibrant student community.",
+        "Faculty": "The relationship between faculty and students is positive, and the faculty members are highly approachable. There is one internal exam conducted before the final semester exam. The exams are quite difficult and 2-3 percent of the students struggle to pass them. The teaching staff includes experienced professors and Ph.D. scholars who strive to provide the best support to their students."
+      }
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "course": "Post Graduate Program in Management for Executives (MBA-PGPX)",
+      "overall_rating": "4",
+      "review_title": "I am the lucky person for the IIM.",
+      "review_date": "Reviewed on19 Jun 2024",
+      "detailed_review": {
+        "Placements": "The placement of students placed in our course is 100%. The IIM is well known for placements at the highest package (54 LPA), the lowest package (2.4 to 5 LPA), and the average (5 to 17 LPA). Placement training and skill development classes are held, and students like me came to know the real world projects, and we worked and gained experience. The internship opportunities for our course are 96%. I love the course curriculum.",
+        "Infrastructure": "Infrastructure is best class, as it is IIM—the beautiful Classrooms and Campus with greenery Plants and Trees. The Facilities in our Course is top-notch, like Wi-Fi facilities in our Classrooms and library, which have a vast number of Books. The Hostel facilities is available The food in the hostel is good. Mess food is better than the Canteen food. The best-class Clubs for Sports and Games. Medical Facilities are also provided.",
+        "Faculty": "The teachers are well experienced, and some of them are IITains who have worked and have all the knowledge in subjects. Qualified teachers. The teaching facilities are the best. They give students real-world projects that make them ready for industry. The passing percentage is 92%. Most of them are well-cracked competitive exams. The exams are hard to pass."
+      }
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "course": "Faculty Development Programme in Pedagogy and Research Methods",
+      "overall_rating": "4.2",
+      "review_title": "Best Review of Our IIM Ahmedabad.",
+      "review_date": "Reviewed on12 May 2024",
+      "detailed_review": {
+        "Placements": "One of the colleges well known for placements is IIM Ahmedabad. It has a record for the highest placements every year. The highest package is 37 LPA, and the lowest package is 7.1 LPA. The average salary is 19 LPA in our course. The recruiting companies are TATA, Meta, IBM, Microsoft, Deloitte, etc. We have the highest place for internships in our batch.",
+        "Infrastructure": "At IIM Ahmedabad, there is a large playground to play all types of games, both indoor and outdoor. The infrastructure of our college is nice, and many facilities are provided to each student. The Wi-Fi on campus is high-speed. We have a gym, a swimming pool, and 24x7 medical facilities.",
+        "Faculty": "IIM Ahmedabad has the best faculty in India. They are well experienced and experts in all subjects, and they clear all doubts very quickly. Many colleges are inspired by our faculty. The teaching quality is the best in India. The course is relevant and makes us experts in the industry. The passing percentage is 100% every year."
+      }
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "course": "Blended Post Graduate Programme in Management (BPGP)(MBA-BPGP)",
+      "overall_rating": "5",
+      "review_title": "One of the best colleges, which I can suggest to my friends.",
+      "review_date": "Reviewed on12 May 2024",
+      "detailed_review": {
+        "Placements": "The percentage of students placed in our college is 85 percent. The highest package is 55 lakhs per annum, the lowest package is 11 lakhs per annum, and the average package is 27 lakhs per annum. In the future, it will increase because the top companies that came to this college are Accenture, BCG, Tata, etc. Seventy-five percent of students got an internship in BCG companies. The two roles offered in our course are web skills and a few ideas about accounting.",
+        "Infrastructure": "The infrastructure is good and the classrooms are well cleaned and the departments are designed and cleaned. They provide an Wi-Fi facilities and they provide library with card and we can take any of the books which we want and later we can give back to them. The hostel is very good and hygienic and the quality of food is also good. They provide Wi-Fi and hot water and facilities also they provide sports kits to play for us in free times.",
+        "Faculty": "The teachers are good and graduated. They are knowledgeable and help us in learning. The course is related to the curriculum, which helps us to be industry-ready. The semesters are not difficult if we read, but we have to work hard for that. The pass percentage is 55 percent."
+      }
+    },
+    {
+      "reviewer_name": "Anonymous",
+      "course": "Blended Post Graduate Programme in Management (BPGP)(MBA-BPGP)",
+      "overall_rating": "4.2",
+      "review_title": "I would recommend this college.",
+      "review_date": "Reviewed on31 Oct 2023",
+      "detailed_review": {
+        "Placements": "At my college, the placement rate is high. I also got placed in BCG group with a package of 20 Lacs per annum. My friend got placed in Amazon with a package of 25 lakh per annum. The placement department is very helpful.",
+        "Infrastructure": "The course is really nice. You just need to learn the basic concepts. You can cover the whole course very well. The course is structured in such an amazing way that students can enjoy it while learning it. The infrastructure of campus is excellent.",
+        "Faculty": "The faculty are awesome. The faculty members are so lovely and friendly. They help us at every point of time. The teachers are highly educated and knowledgeable. Its nice to be here. They make us industry ready. Semester exams are not tough."
+      }
+    },
+    {
+      "reviewer_name": "Rohit Yadav",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "4.4",
+      "review_title": "It is an excellent college.",
+      "review_date": "Reviewed on18 Aug 2023",
+      "detailed_review": {
+        "Placements": "Almost 100% of students get placements and internships every year. Students got finance roles. The lowest salary package offered is 26 LPA.",
+        "Infrastructure": "The campus provides great infrastructure. All classrooms are one of the best in India. They have state-of-the-art technology. All hostels are good. The campus provides great facilities for sports like badminton, squash, table tennis, football, etc. Our college has a swimming pool and cricket ground.",
+        "Faculty": "All teachers are great. They provide practical experience. Their teaching methods are case-based. They make students think about every situation. They conduct quizzes during the first year. We have to study every day to pass exams.",
+        "Other": "The crowd is diverse. Our college conducts fests very well."
+      }
+    },
+    {
+      "reviewer_name": "Shruti Gupta",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "5",
+      "review_title": "Review of IIM Ahmedabad - Indian Institute of Management.",
+      "review_date": "Reviewed on10 Aug 2023",
+      "detailed_review": {
+        "Placements": "Our college provides excellent placements. Many students secure placements in various sectors, such as marketing, consulting, finance, production, general management, operations, etc. The campus attracts industry-leading companies. Almost all students are placed and get internships. The highest salary package offered is 1 CPA.",
+        "Infrastructure": "The hostel facilities are excellent. Air-conditioners are available in classrooms. They provide a refrigerator. Purified drinking water is provided. Washrooms are available. Classrooms are well-equipped. Speakers, microphones, personal charging points, etc., are available. The library is huge. VSL is practically an institution itself. The college building is 5-storeyed. The mess and canteen are on the old and new campuses, and there are multiple eateries throughout the campus.",
+        "Faculty": "Our teachers are excellent and well-qualified. Most teachers are Ph.D. holders. The curriculum is very up-to-date and application-based. IIMA is renowned for its case-based learning, and it certainly lives up to that reputation. The evaluation process is comprehensive, and exams are difficult because we have to cover 12 to 13 subjects within 2 to 3 months.",
+        "Other": "Our college celebrates 2 fests, Chaos, an annual cultural fest, and TRBS, an annual business fest. There are fewer stray dogs, as that is a bit of a nuisance. The drainage system is quite terrible, and water pools up easily. Extracurricular activities are held. Our college has more than 50 clubs and many sports options. There are two sports complexes, two gyms, and designated areas for every sport, from cricket to football, all equipped with the necessary equipment. Scholarships are provided."
+      }
+    },
+    {
+      "reviewer_name": "john joseph",
+      "course": "Post Graduate Program in Management for Executives (MBA-PGPX)",
+      "overall_rating": "4.2",
+      "review_title": "Our college has good faculty members and facilities.",
+      "review_date": "Reviewed on21 Apr 2023",
+      "detailed_review": {
+        "Infrastructure": "The hostel accommodation was better than expected, but the mess food was not up to the mark. The food items served included chapatti, idli, dosa, parotta, and rice. There were two buildings, including the new hostel. There was a lake beside the girls' hostel. There was no water problem. There was filtered drinking water. Snacks were served in the evening. Coffee and tea are available two times a day. They served lunch with curry, curd, rasam, and papad.",
+        "Faculty": "Faculty members were good. They took extra care with the course curriculum. They were very responsible for their subjects. They took personal interest in their students. I am well satisfied with them. I chose this course for developing my skills in this field. Faculty members were very close to us. They cleared up all doubts about the subjects. During exam times, they will be specially trained."
+      }
+    },
+    {
+      "reviewer_name": "Reshu thakur",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "4.6",
+      "review_title": "It is a good college to learn.",
+      "review_date": "Reviewed on2 Feb 2023",
+      "detailed_review": {
+        "Placements": "Around 100% of students got placement in our college. The highest domestic salary package was 70 LPA, the lowest salary package was 40 LPA, and the average salary package was 50 LPA. Top recruiting companies are Microsoft, Axis Bank, Adani Group of Industries, Larson & Toubro, etc. Students try for internships in the last two months. Around 100% of students get internships in this college in well-known companies like TCS, Florite, Reliance Industries, etc.",
+        "Infrastructure": "Classrooms were good with comfortable furniture. Our campus was fully enabled with high-speed Wi-Fi. Library was well stocked with journals and magazines for self-study. Hostel facilities were average. The canteen was not affordable. Medical and sports facilities were available.",
+        "Faculty": "Teachers in our college were helpful, well-qualified, and knowledgeable. They solved the doubts of the students. The course curriculum was relevant and made students job ready. Semester exams were not tough. If students study well throughout the year, they can easily pass the exams. Around 90% of students passed exams.",
+        "Other": "I chose this course because of my dream and management. Hostel facilities should be improved. Our college organised multiple fests and scholarship programs."
+      }
+    },
+    {
+      "reviewer_name": "Ram yadav",
+      "course": "Post Graduate Program in Management for Executives (MBA-PGPX)",
+      "overall_rating": "4.6",
+      "review_title": "Our college provides good placements.",
+      "review_date": "Reviewed on22 Jan 2023",
+      "detailed_review": {
+        "Placements": "Our college is well-known for its placements. Almost 100% of students get placed every year in our college. The highest domestic salary package offered is 70 LPA. The average salary package offered is 45 LPA. The lowest salary package offered is 30 LPA. Top recruiting companies are Boston Consultancy Group, Axis Bank, Larson and Toubro, Deloitte, Nestle, Reliance Group, etc. Students are eligible for internships in the last 2 months of the year. Almost 100% of students got internships in well-known companies like Tata consultancy, Adani Group, HDFC General Insurance, Sun silk, etc.",
+        "Infrastructure": "The infrastructure of our college is very good. There is comfortable furniture for students. Wi-Fi facility is av 24X7 on campus. The library is well-stocked with many books and journals for self-study. There is a well-decorated lab with the availability of all necessary equipment. The hostel is average. The food served in the mess is not tasty and unhygienic. They provide a variety of food items. Our college provides good sports and medical facilities.",
+        "Faculty": "Our faculty members are qualified and experienced. They have good knowledge of their subject. Their teaching quality is good. They clear all our doubts. The course curriculum is relevant and makes students industry-ready. Semester exams are not much difficult. If you attend every lecture and study throughout the year, then you can easily pass the exam. Around 90% of students pass the exam.",
+        "Other": "I opted for this course because I want to gain knowledge of management. The hostel and canteen facilities should be improved. Our college organises multiple fests like dikshant and samaroh. Our college provides scholarship programs based on knowledge and financial condition."
+      }
+    },
+    {
+      "reviewer_name": "Samyak jain",
+      "course": "Post Graduate Program in Management for Executives (MBA-PGPX)",
+      "overall_rating": "4.6",
+      "review_title": "Review of IIM Ahmedabad - Indian Institute of Management.",
+      "review_date": "Reviewed on18 Jan 2023",
+      "detailed_review": {
+        "Placements": "Our college has a very active placement cell. Almost 100% of students got placed in our college. The highest salary package offered is 70 LPA. The average salary package offered is 50 LPA. The lowest salary package offered is 40 LPA. Top recruiting companies are Boston Consultancy, Tata Consultancy Services, Axis Bank, Larson and Torbro, Amazon, Sunsilk, etc. Students are eligible for a 2-month internship during their course. Students should apply for internships. Almost 100% of students got internships in companies. Top internship companies are Larsen and Torbro, Deloitte, Nestle, Reliance Group, Adani Group, Logitech, Mahindra, etc.",
+        "Infrastructure": "Our college ensures the comfort of students. Our college provides comfortable furniture in classrooms. Wi-Fi facility is available at high speed. Our college provides a library for self-study, and it contains many books related to the course and journals. The hostel is average. The food served in the hostel is unhygienic. Our college provides good sports facilities for students. Medical facilities are available in our college.",
+        "Faculty": "Our teachers are knowledgeable and well-qualified. They know techniques to teach, but they are not much friendly to students. The course curriculum is relevant and it makes students industry-ready. Semester exams are a bit difficult. If students study throughout the year, then they will pass exams. Around 90% of students pass exams.",
+        "Other": "I opted for this course because I wanted to run my family business. It is a reputed and good college. It is a well-known college. Our college should improve the quality of mess. Our teachers should be more friendly."
+      }
+    },
+    {
+      "reviewer_name": "Rishi gaharwar",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "4.8",
+      "review_title": "Review of Indian Institute of Management, Ahmedabad.",
+      "review_date": "Reviewed on18 Jan 2023",
+      "detailed_review": {
+        "Placements": "Around 100% of students got placements in this college with good salary packages. The highest salary package offered was 70 LPA, the lowest salary package was 40 LPA, and the average salary package was 45 LPA. Students got placements in well-known firms like Boston, Amazon India, TCS, Adani Group, Axis Bank, etc. Our college made students job ready. Students have to do 2 months of internships in their final year. Around 100% of students got internships in our college. Top internship firms were TCS, HDFC General Insurance, Larson and Toubro, Sunsilk, Amazon India, etc.",
+        "Infrastructure": "The infrastructure of our campus was good. Classrooms were well-furnished and comfortable. Our campus was enabled with high-speed Wi-Fi. Library was good with many books, generals, and other self-study materials with a place to sit and study in a silent environment. Hostel was average. Canteen food was not hygienic but sports and medical assistance were good.",
+        "Faculty": "Teachers in our college were well-qualified, experienced, and had good knowledge of the subject. They used different techniques to teach students. The course curriculum was relevant and made students job ready. Semester exams were averagely difficult but all students pass the exam. Students need to study whole year to pass exams easily.",
+        "Other": "I chose this course to work in a well-known private firm with a good salary package. The hostel should improve the food served in the mess because it is unhygienic. Our college organises multiple fests every year. Many scholarships were provided for toppers and poor students."
+      }
+    },
+    {
+      "reviewer_name": "Rahul rathore",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "4.8",
+      "review_title": "I recommend students to take admission to this college.",
+      "review_date": "Reviewed on13 Jan 2023",
+      "detailed_review": {
+        "Placements": "Around 100% of students got placements in our college. The maximum salary package offered was 60 LPA, the minimum salary package was 38 LPA, and the average salary package was 50 LPA. Top recruiting companies were TCS, Amazon, SBI General Insurance, Credit Suisse, Asian Paints, etc. Around 100% of students got internships in our college in well-known companies like Larson and Toubro, Kavincare, Samsung Electronics, Axis Bank, etc.",
+        "Infrastructure": "The infrastructure of our college was comfortable. Our campus was enabled with high-speed Wi-Fi. Classrooms were very comfortable. Library was available in our college to study in silence. The infrastructure of the hostel was good but the food served in the mess was not hygienic. Sports and medical facilities were available in the hostel.",
+        "Faculty": "Teachers in our college were well qualified and experienced to teach students. They clear the doubts of all the students but were not friendly with students. The course curriculum was relevant and it made students job ready. Semester exams were average. Students have to study throughout the year to easily pass the semester exam.",
+        "Other": "I chose this course because I loved to work in the management sector. The campus had a friendly environment."
+      }
+    },
+    {
+      "reviewer_name": "Atishay Jain",
+      "course": "Master of Business Administration (MBA)",
+      "overall_rating": "4.6",
+      "review_title": "It is a reputed college.",
+      "review_date": "Reviewed on12 Jan 2023",
+      "detailed_review": {
+        "Placements": "Our college provides good placements. Almost 100% of students get placed in our college. The highest salary package offered is 60 LPA. The average salary package offered is 40 LPA. The lowest salary package offered is 40 LPA. Top recruiting companies are TCS, Tata Consultancy Services, Amazon, HDFC, General Insurance, etc. Almost 100% of students get internships from our college in well-known companies like Adani Group, Sunsilk, Larsen and Toubro, and Amazon.",
+        "Infrastructure": "The infrastructure of our college is good. Our classroom furniture is comfortable. Our college is under CCTV surveillance. Wi-Fi facility is available at high speed in our college. The library and labs are in good condition. The hostel is good. The food served in the mess is unhygienic. Medical and sports facilities are available in the hostel.",
+        "Faculty": "Teachers are well-qualified and experienced. They are friendly with students. They clear our doubts. The course curriculum is relevant and it makes students industry-ready. Semester exams are average. Around 90% of students pass exams. You have to study the whole semester to clear semester exams.",
+        "Other": "I opted for this course because I liked to study management."
+      }
+    }
+  ],
+  "admission": {
+    "title": "IIM Ahmedabad Admission Overview 2026",
+    "overview_text": "IIM Ahmedabad admission 2025 is primarily entrance-based . This institute is known for its two-year , full-time , residential flagship PGP (also referred to as MBA) programme that offers admission based on a valid score in CAT . The percentile of CAT for IIM Ahmedabad reached up to 99.6 in the past years which shows how rigorous it is for a student to get admission to this institute. IIM-A admission cycle for PGP commences every year with the start of CAT registrations.\n\nApart from PGP, IIM A also offers other PG and doctoral degree courses in the field of Management . Candidates are shortlisted for these programmes based on course-specific entrance exams, followed by shortlisting processes which generally comprise a Personal Interview (PI) round. IIM Ahmedabad admission to all courses is done through the scores of various entrance exams, followed by other admission criteria.",
+    "faqs": [
+      {
+        "question": "Is admission to MBA at IIM Ahmedabad confirmed if I score 100 percentile in CAT?",
+        "answer": "There is a good chance of receiving an interview call from IIM Ahmedabad, however, admission isn’t guaranteed even at 100 percentile. The overall criteria includes academic profile, that is your Class 12, Class 10 and graduation marks. The college also gives a score for work experience, hence, candidates must have 2-3 years of experience to get maximum points. Additional focus is also given to gender and academic diversity. Considering all these factors and candidates’ CAT score, IIM Ahmedabad prepares a composite score through which decides whether to finalise a student or not. IIM Ahmedabad or any other IIM, for that matter, doesn’t give direct admission only on the basis of CAT percentile, the first phase of admission process is giving the CAT exam. Students must clear the sectional and the minimum final cut-off to be eligible and considered for the call. After that, they must get shortlisted for the interviews and group discussion process. After all these rounds, a final list of shortlisted candidates is prepared."
+      },
+      {
+        "question": "What is the selection process for IIM Ahmedabad?",
+        "answer": "IIM Ahmedabad's selection criteria is entrance-based for the offered courses. Students need to meet both the basic eligibility and clear the selection rounds as well. Check out the table below to know about the selection criteria for IIM Ahmedabad: CAT + Analytical Writing Test (AWT) + Personal Interview (PI) CAT/ GMAT/ GRE/ IIMA Admission Test (IAT) + Personal Interview (PI) Valid GMAT/ GRE score + Essay submission + PI round"
+      },
+      {
+        "question": "Is studying at IIM Ahmedabad expensive?",
+        "answer": "Yes, IIM Ahmedabad is certainly costly. IIM Ahmedabad total fees ranges between INR 64,000 and INR 33 lakh . The fees vary depending on the programme and specialisation selected by the students. The fee for certain programmes certainly falls in the higher end of the spectrum. Students need to pay INR 25 lakh as IIM Ahmedabad MBA fee. However, considering the fact that IIMA is one of the top-rate IIMs and limitless oppurtunities students can experience at the institute, it might be considered a worthwile investment. Further, the institute also offers financial aid to its students."
+      },
+      {
+        "question": "Can I pursue E-MBA at IIM Ahmedabad?",
+        "answer": "Yes, students can pursue Executive MBA programme at IIM Ahmedabad . The institute provides the course for working professionals. The tuition fee for the E-MBA programme at IIM Ahmedabad is around INR 33 lakh ."
+      },
+      {
+        "question": "What is the fee for the ePGD-ABA programme at IIMA?",
+        "answer": "As per the official website, the total fee is INR 12 Lacs (inclusive of all taxes). The programme fee is inclusive of tuition fee, course materials fee, student's stay and food during campus visits and other service facilities, such as libraries, etc. Students can pay this programme fee in two instalments. The institute shares the fee structure along with the admission offer. For the ease of the students, IIM-A also has tie-ups with multiple banks to offer collateral-free education loans."
+      },
+      {
+        "question": "What are the minimum eligibility requirements for admission to PGP at IIM Ahmedabad?",
+        "answer": "To be eligible for IIM Ahmedabad MBA admissions, a candidate needs to pass a bachelor’s degree or equivalent qualification from a UGC-recognised university after at least 12 years of school education with a minimum of 50% aggregate or equivalent CGPA (45% in case of SC/ ST/ PwD candidates). Candidates, appearing for the final year of their bachelor's degree with final year results awaiting, can also apply. However, such candidates, if selected, will be granted provisional admission, only if a candidate submits a pre-final certificate signed by competent authorities of the previous institute/ university, the latest by June 30 of the year of admission."
+      }
+    ]
+  },
+  "eligibility_selection": {
+    "title": "IIM Ahmedabad Eligibility & Selection Criteria 2026",
+    "intro_text": "IIM Ahmedabad admissions are conducted through entrance exams. The institute is known for its flagship PGP course . At IIM-A, students can pursue the programme in full-time and regular modes. IIM Ahmedabad course admission is completely entrance and interview-based across all Postgraduate and Doctoral courses. Students are selected based on various national-level entrance exams like CAT, GATE, UGC NET, etc. Candidates seeking admission to the flagship MBA/ PGP course are required to appear for CAT. The table below mentions the IIM Ahmedabad eligibility criteria for MBA and other IIM Ahmedabad courses, along with the acceptance of the entrance exam and selection criteria.:",
+    "eligibility_table": [
+      {
+        "course": "PGP",
+        "eligibility": "Bachelor's degree with a minimum of 50% aggregate",
+        "selection_criteria": "CAT + Analytical Writing Test (AWT) + Personal Interview (PI) Download Test paper: FREE CAT Mock Test"
+      },
+      {
+        "course": "PGP-FABM",
+        "eligibility": "UG OR PG degree in Agricultural Sciences or Agriculture-related streams, with at least 50% aggregate",
+        "selection_criteria": "CAT + Analytical Writing Test (AWT) + Personal Interview (PI)"
+      },
+      {
+        "course": "e-PGP",
+        "eligibility": "3 years of full-time work experience + any UG degree/ CA/ CS/ ICWA, with at least 50% aggregate",
+        "selection_criteria": "CAT/ GMAT / GRE / IIMA Admission Test (IAT) + Personal Interview (PI)"
+      },
+      {
+        "course": "MBA-PGPX",
+        "eligibility": "A UG degree or equivalent + 4 years of work experience",
+        "selection_criteria": "Valid GMAT/ GRE score + Essay submission + PI round"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is admission to MBA at IIM Ahmedabad confirmed if I score 100 percentile in CAT?",
+        "answer": "There is a good chance of receiving an interview call from IIM Ahmedabad, however, admission isn’t guaranteed even at 100 percentile. The overall criteria includes academic profile, that is your Class 12, Class 10 and graduation marks. The college also gives a score for work experience, hence, candidates must have 2-3 years of experience to get maximum points. Additional focus is also given to gender and academic diversity. Considering all these factors and candidates’ CAT score, IIM Ahmedabad prepares a composite score through which decides whether to finalise a student or not. IIM Ahmedabad or any other IIM, for that matter, doesn’t give direct admission only on the basis of CAT percentile, the first phase of admission process is giving the CAT exam. Students must clear the sectional and the minimum final cut-off to be eligible and considered for the call. After that, they must get shortlisted for the interviews and group discussion process. After all these rounds, a final list of shortlisted candidates is prepared. Not satisfied with answer? Ask Shiksha GPT"
+      },
+      {
+        "question": "What is the selection process for IIM Ahmedabad?",
+        "answer": "IIM Ahmedabad's selection criteria is entrance-based for the offered courses. Students need to meet both the basic eligibility and clear the selection rounds as well. Check out the table below to know about the selection criteria for IIM Ahmedabad: Courses Selection Criteria PGP CAT + Analytical Writing Test (AWT) + Personal Interview (PI) PGP-FABM CAT + Analytical Writing Test (AWT) + Personal Interview (PI) e-PGP CAT/ GMAT/ GRE/ IIMA Admission Test (IAT) + Personal Interview (PI) MBA-PGPX Valid GMAT/ GRE score + Essay submission + PI round Not satisfied with answer? Ask Shiksha GPT"
+      },
+      {
+        "question": "Is studying at IIM Ahmedabad expensive?",
+        "answer": "Yes, IIM Ahmedabad is certainly costly. IIM Ahmedabad total fees ranges between INR 64,000 and INR 33 lakh . The fees vary depending on the programme and specialisation selected by the students. The fee for certain programmes certainly falls in the higher end of the spectrum. Students need to pay INR 25 lakh as IIM Ahmedabad MBA fee. However, considering the fact that IIMA is one of the top-rate IIMs and limitless oppurtunities students can experience at the institute, it might be considered a worthwile investment. Further, the institute also offers financial aid to its students. Not satisfied with answer? Ask Shiksha GPT"
+      },
+      {
+        "question": "Can I pursue E-MBA at IIM Ahmedabad?",
+        "answer": "Yes, students can pursue Executive MBA programme at IIM Ahmedabad . The institute provides the course for working professionals. The tuition fee for the E-MBA programme at IIM Ahmedabad is around INR 33 lakh . Not satisfied with answer? Ask Shiksha GPT"
+      },
+      {
+        "question": "What is the fee for the ePGD-ABA programme at IIMA?",
+        "answer": "As per the official website, the total fee is INR 12 Lacs (inclusive of all taxes). The programme fee is inclusive of tuition fee, course materials fee, student's stay and food during campus visits and other service facilities, such as libraries, etc. Students can pay this programme fee in two instalments. The institute shares the fee structure along with the admission offer. For the ease of the students, IIM-A also has tie-ups with multiple banks to offer collateral-free education loans. Not satisfied with answer? Ask Shiksha GPT"
+      },
+      {
+        "question": "What are the minimum eligibility requirements for admission to PGP at IIM Ahmedabad?",
+        "answer": "To be eligible for IIM Ahmedabad MBA admissions, a candidate needs to pass a bachelor’s degree or equivalent qualification from a UGC-recognised university after at least 12 years of school education with a minimum of 50% aggregate or equivalent CGPA (45% in case of SC/ ST/ PwD candidates). Candidates, appearing for the final year of their bachelor's degree with final year results awaiting, can also apply. However, such candidates, if selected, will be granted provisional admission, only if a candidate submits a pre-final certificate signed by competent authorities of the previous institute/ university, the latest by June 30 of the year of admission. Not satisfied with answer? Ask Shiksha GPT"
+      }
+    ]
+  },
+  "placement_report": {
+    "title": "IIM Ahmedabad Placement Report 2025",
+    "summary": [
+      "IIM Ahmedabad has released the placement report 2025 for PGP, PGP FABM and PGPX programs. As per the PGP and PGP FABM placement reports, this year 100% placement was recorded. Consulting was the top recruiting sector for both these programs. The overall highest package offered this year INR 110 LPA.",
+      "Boston Consulting Group emerged as the top recruiter. The next top recruiters were Accenture, American Express, Bain and McKinsey & Company. As per the report, there was increase of 13.7% in the number of PGP offers from the Finance function this year. General Management offers increased by 5% whereas Strategy domain witnessed 33% increase as compared to last year."
+    ],
+    "faqs": [
+      {
+        "question": "What is the highest package offered during IIM Ahmedabad placements?",
+        "answer": "The course-wise the highest package offered over the past three years during IIM Ahmedabad placements is presented below: Course Highest Package (2023) Highest Package (2024) Highest Package (2025) PGPX INR 108 LPA INR 54.8 CPA INR 76.5 LPA Course Highest Package (2021) Highest Package (2022) Highest Package (2023) PGP INR 55 LPA INR 61.48 LPA INR 1.46 crore per annum PGP FABM INR 27.82 LPA INR 33.83 LPA INR 33.39 LPA Note: The mean package is considered as the average package in the above-mentioned table. Further, the Maximum Earning Potential is considered for the salary packages shown above. Not satisfied with answer? Ask Shiksha GPT",
+        "tables": [
+          {
+            "headers": [
+              "Course",
+              "Highest Package (2023)",
+              "Highest Package (2024)",
+              "Highest Package (2025)",
+              "Course",
+              "Highest Package (2021)",
+              "Highest Package (2022)",
+              "Highest Package (2023)"
+            ],
+            "rows": [
+              [
+                "PGPX",
+                "INR 108 LPA",
+                "INR 54.8 CPA",
+                "INR 76.5 LPA"
+              ],
+              [
+                "PGP",
+                "INR 55 LPA",
+                "INR 61.48 LPA",
+                "INR 1.46 crore per annum"
+              ],
+              [
+                "PGP FABM",
+                "INR 27.82 LPA",
+                "INR 33.83 LPA",
+                "INR 33.39 LPA"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Which sector hires the maximum number of students during IIM Ahmedabad placement drive?",
+        "answer": "The course-wise top recruiting sector during IIM Ahmedabad placements is presented below: Course Top Sector Offers Received PGP Consulting 179 (2023) PGP FABM Agri Inputs 19 (2023) PGPX IT Consulting 32 (2025) Not satisfied with answer? Ask Shiksha GPT",
+        "tables": [
+          {
+            "headers": [
+              "Course",
+              "Top Sector",
+              "Offers Received"
+            ],
+            "rows": [
+              [
+                "PGP",
+                "Consulting",
+                "179 (2023)"
+              ],
+              [
+                "PGP FABM",
+                "Agri Inputs",
+                "19 (2023)"
+              ],
+              [
+                "PGPX",
+                "IT Consulting",
+                "32 (2025)"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "average_package": {
+    "title": "IIM Ahmedabad Average Package 2025",
+    "intro": "The average package received over the past three years during PGP, PGP FABM, and PGPX placements is mentioned below:",
+    "average_package_table": [
+      {
+        "Course": "PGP",
+        "Average Package 2023": "INR 34.45 LPA",
+        "Average Package 2024": "INR 33.23 LPA",
+        "Average Package 2025": "INR 35.22 LPA"
+      },
+      {
+        "Course": "PGP FABM",
+        "Average Package 2023": "INR 20.11 LPA",
+        "Average Package 2024": "INR 21.57 LPA",
+        "Average Package 2025": "INR 21.64 LPA"
+      },
+      {
+        "Course": "PGPX",
+        "Average Package 2023": "INR 35.68 LPA",
+        "Average Package 2024": "INR 36.41 LPA",
+        "Average Package 2025": "INR 37.25 LPA"
+      }
+    ],
+    "top_recruiters": [
+      "ACCENTURE",
+      "Aditya Birla Group",
+      "Abbot",
+      "Adidas",
+      "Deloitte",
+      "KPMG",
+      "McKinsey",
+      "Boston Consulting Group",
+      "Goldman Sachs",
+      "Credit Suisse",
+      "HSBC",
+      "Nomura",
+      "ITC",
+      "Lenovo",
+      "Nestle",
+      "Asian Paints",
+      "Reckitt Benckiser",
+      "Wipro",
+      "Tata Sky",
+      "Reliance Industries Limited",
+      "Infosys",
+      "IBM",
+      "ICICI",
+      "Airtel",
+      "Adani Group"
+    ],
+    "insights": [
+      {
+        "title": "Internships and industry projects",
+        "description": "Offered every semester"
+      },
+      {
+        "title": "Employment opportunities",
+        "description": "Higher in core jobs"
+      },
+      {
+        "title": "Higher studies preferences",
+        "description": "Both inside India & outside India"
+      },
+      {
+        "title": "Placement support",
+        "description": "Students are expected to reach out to companies themselves"
+      },
+      {
+        "title": "Placement support",
+        "description": "Organized & proactive placement process"
+      },
+      {
+        "title": "Alumni network",
+        "description": "Strong alumni network that help with placement opportunities"
+      },
+      {
+        "title": "Entrepreneurship cell",
+        "description": "Very Active and resourceful, college is also involved"
+      },
+      {
+        "title": "Overall feeling of students",
+        "description": "Love being in college"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average package offered during IIM Ahmedabad placements?",
+        "answer": "The course-wise average package offered over the past three years is presented below: Course Average Package (2023) Average Package (2024) Average Package (2025) PGPX INR 35.68 LPA INR 36.41 LPA INR 37.25 LPA Course Average Package (2021) Average Package (2022) Average Package (2023) PGP INR 27.54 LPA INR 32.79 LPA INR 34.45 LPA PGP FABM INR 17.79 LPA INR 21.49 LPA INR 20.11 LPA Not satisfied with answer? Ask Shiksha GPT",
+        "tables": [
+          {
+            "headers": [
+              "Course",
+              "Average Package (2023)",
+              "Average Package (2024)",
+              "Average Package (2025)",
+              "Course",
+              "Average Package (2021)",
+              "Average Package (2022)",
+              "Average Package (2023)"
+            ],
+            "rows": [
+              [
+                "PGPX",
+                "INR 35.68 LPA",
+                "INR 36.41 LPA",
+                "INR 37.25 LPA"
+              ],
+              [
+                "PGP",
+                "INR 27.54 LPA",
+                "INR 32.79 LPA",
+                "INR 34.45 LPA"
+              ],
+              [
+                "PGP FABM",
+                "INR 17.79 LPA",
+                "INR 21.49 LPA",
+                "INR 20.11 LPA"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What is the average salary trends witnessed at IIM Ahmedabad in recent past?",
+        "answer": "The average salary trends witnessed during IIM Ahmedabad placements over the past three years for PGP, PGP FABM and PGPX programs are presented below: Course Average Package (2021) Average Package (2022) Average Package (2023) PGP INR 27.54 LPA INR 32.79 LPA INR 34.45 LPA PGP FABM INR 17.79 LPA INR 21.49 LPA INR 20.11 LPA Course Average Package (2023) Average Package (2024) Average Package (2025) PGPX INR 35.68 LPA INR 36.41 LPA INR 37.25 LPA Not satisfied with answer? Ask Shiksha GPT",
+        "tables": [
+          {
+            "headers": [
+              "Course",
+              "Average Package (2021)",
+              "Average Package (2022)",
+              "Average Package (2023)",
+              "Course",
+              "Average Package (2023)",
+              "Average Package (2024)",
+              "Average Package (2025)"
+            ],
+            "rows": [
+              [
+                "PGP",
+                "INR 27.54 LPA",
+                "INR 32.79 LPA",
+                "INR 34.45 LPA"
+              ],
+              [
+                "PGP FABM",
+                "INR 17.79 LPA",
+                "INR 21.49 LPA",
+                "INR 20.11 LPA"
+              ],
+              [
+                "PGPX",
+                "INR 35.68 LPA",
+                "INR 36.41 LPA",
+                "INR 37.25 LPA"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What is the median package offered during recent placements at IIM Ahmedabad?",
+        "answer": "The course-wise median package offered during IIM Ahmedabad placements over the past three years is presented below: Course Median Package (2021) Median Package (2022) Median Package (2023) PGP INR 27.6 LPA INR 31.49 LPA INR 31.58 LPA PGP FABM INR 16.84 LPA INR 20 LPA INR 20 LPA Course Median Package (2023) Median Package (2024) Median Package (2025) PGPX INR 33.05 LPA INR 35 LPA INR 34.41 LPA Not satisfied with answer? Ask Shiksha GPT",
+        "tables": [
+          {
+            "headers": [
+              "Course",
+              "Median Package (2021)",
+              "Median Package (2022)",
+              "Median Package (2023)",
+              "Course",
+              "Median Package (2023)",
+              "Median Package (2024)",
+              "Median Package (2025)"
+            ],
+            "rows": [
+              [
+                "PGP",
+                "INR 27.6 LPA",
+                "INR 31.49 LPA",
+                "INR 31.58 LPA"
+              ],
+              [
+                "PGP FABM",
+                "INR 16.84 LPA",
+                "INR 20 LPA",
+                "INR 20 LPA"
+              ],
+              [
+                "PGPX",
+                "INR 33.05 LPA",
+                "INR 35 LPA",
+                "INR 34.41 LPA"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "placements_faqs": [
+    {
+      "question": "Which course should I choose at IIM Ahmedabad for best career option?",
+      "answer": "All the courses offered by IIM Ahmedabad are career-oriented. However, every program offered at IIMA has different objective. The PGP program of IIM Ahmedabad is the flagship program, which purely suits students who want to build their career in Core Management. Further, the PGP FABM program will suit students who want to build their career in the field of Agriculture. The PGPX program is meant for students with work experience. The key highlights of IIM Ahmedabad placements over the past three years for PGP, PGP FABM and PGPX programs are presented below: Particulars PGP Placement Statistics (2021) PGP Placement Statistics (2022) PGP Placement Statistics (2023) Highest package INR 55 LPA INR 61.48 LPA INR 146 LPA Average package INR 27.54 LPA INR 32.79 LPA INR 34.45 LPA Median package INR 27.6 LPA INR 31.49 LPA INR 31.58 LPA Lowest package INR 11 LPA INR 17.5 LPA INR 18.05 LPA Roles offered 170 220 280 Offers accepted 374 382 385 Students placed 374 382 385 Students opted out 14 3 4 Companies visited 131 190 188 Particulars PGP FABM Placement Statistics (2021) PGP FABM Placement Statistics (2022) PGP FABM Placement Statistics (2023) Highest package INR 27.82 LPA INR 33.83 LPA INR 33.39 LPA Average package INR 17.79 LPA INR 21.49 LPA INR 20.11 LPA Median package INR 16.84 LPA INR 20 LPA INR 20 LPA Lowest package INR 12 LPA INR 12.85 LPA INR 14.97 LPA Companies visited 30 56 32 Offers accepted / Students placed 44 47 46 Eligible students 45 48 47 Students opted out 1 1 1 Students not placed 0 0 0 Particulars PGPX Placement Statistics (2023) PGPX Placement Statistics (2024) PGPX Placement Statistics (2025) Highest package INR 108 LPA INR 54.8 LPA Average package INR 35.68 LPA INR 36.41 LPA Median package INR 33.05 LPA INR 35 LPA Lowest package INR 18 LPA INR 21.46 LPA Offers made 178 150 Offers accepted 128 121",
+      "tables": [
+        {
+          "headers": [
+            "Particulars",
+            "PGP Placement Statistics (2021)",
+            "PGP Placement Statistics (2022)",
+            "PGP Placement Statistics (2023)",
+            "Particulars",
+            "PGP FABM Placement Statistics (2021)",
+            "PGP FABM Placement Statistics (2022)",
+            "PGP FABM Placement Statistics (2023)",
+            "Particulars",
+            "PGPX Placement Statistics (2023)",
+            "PGPX Placement Statistics (2024)",
+            "PGPX Placement Statistics (2025)"
+          ],
+          "rows": [
+            [
+              "Highest package",
+              "INR 55 LPA",
+              "INR 61.48 LPA",
+              "INR 146 LPA"
+            ],
+            [
+              "Average package",
+              "INR 27.54 LPA",
+              "INR 32.79 LPA",
+              "INR 34.45 LPA"
+            ],
+            [
+              "Median package",
+              "INR 27.6 LPA",
+              "INR 31.49 LPA",
+              "INR 31.58 LPA"
+            ],
+            [
+              "Lowest package",
+              "INR 11 LPA",
+              "INR 17.5 LPA",
+              "INR 18.05 LPA"
+            ],
+            [
+              "Roles offered",
+              "170",
+              "220",
+              "280"
+            ],
+            [
+              "Offers accepted",
+              "374",
+              "382",
+              "385"
+            ],
+            [
+              "Students placed",
+              "374",
+              "382",
+              "385"
+            ],
+            [
+              "Students opted out",
+              "14",
+              "3",
+              "4"
+            ],
+            [
+              "Companies visited",
+              "131",
+              "190",
+              "188"
+            ],
+            [
+              "Highest package",
+              "INR 27.82 LPA",
+              "INR 33.83 LPA",
+              "INR 33.39 LPA"
+            ],
+            [
+              "Average package",
+              "INR 17.79 LPA",
+              "INR 21.49 LPA",
+              "INR 20.11 LPA"
+            ],
+            [
+              "Median package",
+              "INR 16.84 LPA",
+              "INR 20 LPA",
+              "INR 20 LPA"
+            ],
+            [
+              "Lowest package",
+              "INR 12 LPA",
+              "INR 12.85 LPA",
+              "INR 14.97 LPA"
+            ],
+            [
+              "Companies visited",
+              "30",
+              "56",
+              "32"
+            ],
+            [
+              "Offers accepted / Students placed",
+              "44",
+              "47",
+              "46"
+            ],
+            [
+              "Eligible students",
+              "45",
+              "48",
+              "47"
+            ],
+            [
+              "Students opted out",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Students not placed",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "Highest package",
+              "INR 108 LPA",
+              "INR 54.8 LPA",
+              "INR 76.5 LPA"
+            ],
+            [
+              "Average package",
+              "INR 35.68 LPA",
+              "INR 36.41 LPA",
+              "INR 37.25 LPA"
+            ],
+            [
+              "Median package",
+              "INR 33.05 LPA",
+              "INR 35 LPA",
+              "INR 34.41 LPA"
+            ],
+            [
+              "Lowest package",
+              "INR 18 LPA",
+              "INR 21.46 LPA",
+              "INR 26 LPA"
+            ],
+            [
+              "Offers made",
+              "178",
+              "150",
+              "150"
+            ],
+            [
+              "Offers accepted",
+              "128",
+              "121",
+              "137"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Does IIM Ahmedabad have 100% placements?",
+      "answer": "The batch placement record for IIM Ahmedabad are given below: Particulars PGP Placement Statistics (2021) PGP Placement Statistics (2022) PGP Placement Statistics (2023) Roles offered 170 220 280 Offers accepted 374 382 385 Students placed 374 382 385 Students opted out 14 3 4 Companies visited 131 190 188 Particulars PGP FABM Placement Statistics (2021) PGP FABM Placement Statistics (2022) PGP FABM Placement Statistics (2023) Companies visited 30 56 32 Offers accepted / Students placed 44 47 46 Eligible students 45 48 47 Students opted out 1 1 1 Students not placed 0 0 0 Particulars PGPX Placement Statistics (2023) PGPX Placement Statistics (2024) PGPX Placement Statistics (2025) Offers made 178 150 150 Offers accepted 128 121 137",
+      "tables": [
+        {
+          "headers": [
+            "Particulars",
+            "PGP Placement Statistics (2021)",
+            "PGP Placement Statistics (2022)",
+            "PGP Placement Statistics (2023)",
+            "Particulars",
+            "PGP FABM Placement Statistics (2021)",
+            "PGP FABM Placement Statistics (2022)",
+            "PGP FABM Placement Statistics (2023)",
+            "Particulars",
+            "PGPX Placement Statistics (2023)",
+            "PGPX Placement Statistics (2024)",
+            "PGPX Placement Statistics (2025)"
+          ],
+          "rows": [
+            [
+              "Roles offered",
+              "170",
+              "220",
+              "280"
+            ],
+            [
+              "Offers accepted",
+              "374",
+              "382",
+              "385"
+            ],
+            [
+              "Students placed",
+              "374",
+              "382",
+              "385"
+            ],
+            [
+              "Students opted out",
+              "14",
+              "3",
+              "4"
+            ],
+            [
+              "Companies visited",
+              "131",
+              "190",
+              "188"
+            ],
+            [
+              "Companies visited",
+              "30",
+              "56",
+              "32"
+            ],
+            [
+              "Offers accepted / Students placed",
+              "44",
+              "47",
+              "46"
+            ],
+            [
+              "Eligible students",
+              "45",
+              "48",
+              "47"
+            ],
+            [
+              "Students opted out",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Students not placed",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "Offers made",
+              "178",
+              "150",
+              "150"
+            ],
+            [
+              "Offers accepted",
+              "128",
+              "121",
+              "137"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which companies generally participate during IIM Ahmedabad placements?",
+      "answer": "A total of 188 companies participated and 280 roles were offered during PGP placements 2023. McKinsey & Company and Boston Consulting Group (BCG) were the top companies that made most number of offers during IIM Ahmedabad PGP placements 2023. The domain-wise offers made by the top recruiters during PGP placements 2023 is listed below: Domain Top Recruiter Name PGP Offers Made (2023) Consulting McKinsey & Company 34 Investment Banks Goldman Sachs 8 General Management Adani 10 IT Consulting TCS 10",
+      "tables": [
+        {
+          "headers": [
+            "Domain",
+            "Top Recruiter Name",
+            "PGP Offers Made (2023)"
+          ],
+          "rows": [
+            [
+              "Consulting",
+              "McKinsey & Company",
+              "34"
+            ],
+            [
+              "Investment Banks",
+              "Goldman Sachs",
+              "8"
+            ],
+            [
+              "General Management",
+              "Adani",
+              "10"
+            ],
+            [
+              "IT Consulting",
+              "TCS",
+              "10"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the highest package offered during IIM Ahmedabad placements?",
+      "answer": "The course-wise the highest package offered over the past three years during IIM Ahmedabad placements is presented below: Course Highest Package (2023) Highest Package (2024) Highest Package (2025) PGPX INR 108 LPA INR 54.8 CPA INR 76.5 LPA Course Highest Package (2021) Highest Package (2022) Highest Package (2023) PGP INR 55 LPA INR 61.48 LPA INR 1.46 crore per annum PGP FABM INR 27.82 LPA INR 33.83 LPA INR 33.39 LPA Note: The mean package is considered as the average package in the above-mentioned table. Further, the Maximum Earning Potential is considered for the salary packages shown above.",
+      "tables": [
+        {
+          "headers": [
+            "Course",
+            "Highest Package (2023)",
+            "Highest Package (2024)",
+            "Highest Package (2025)",
+            "Course",
+            "Highest Package (2021)",
+            "Highest Package (2022)",
+            "Highest Package (2023)"
+          ],
+          "rows": [
+            [
+              "PGPX",
+              "INR 108 LPA",
+              "INR 54.8 CPA",
+              "INR 76.5 LPA"
+            ],
+            [
+              "PGP",
+              "INR 55 LPA",
+              "INR 61.48 LPA",
+              "INR 1.46 crore per annum"
+            ],
+            [
+              "PGP FABM",
+              "INR 27.82 LPA",
+              "INR 33.83 LPA",
+              "INR 33.39 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which sector hires the maximum number of students during IIM Ahmedabad placement drive?",
+      "answer": "The course-wise top recruiting sector during IIM Ahmedabad placements is presented below: Course Top Sector Offers Received PGP Consulting 179 (2023) PGP FABM Agri Inputs 19 (2023) PGPX IT Consulting 32 (2025)",
+      "tables": [
+        {
+          "headers": [
+            "Course",
+            "Top Sector",
+            "Offers Received"
+          ],
+          "rows": [
+            [
+              "PGP",
+              "Consulting",
+              "179 (2023)"
+            ],
+            [
+              "PGP FABM",
+              "Agri Inputs",
+              "19 (2023)"
+            ],
+            [
+              "PGPX",
+              "IT Consulting",
+              "32 (2025)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the average package offered during IIM Ahmedabad placements?",
+      "answer": "The course-wise average package offered over the past three years is presented below: Course Average Package (2023) Average Package (2024) Average Package (2025) PGPX INR 35.68 LPA INR 36.41 LPA INR 37.25 LPA Course Average Package (2021) Average Package (2022) Average Package (2023) PGP INR 27.54 LPA INR 32.79 LPA INR 34.45 LPA PGP FABM INR 17.79 LPA INR 21.49 LPA INR 20.11 LPA",
+      "tables": [
+        {
+          "headers": [
+            "Course",
+            "Average Package (2023)",
+            "Average Package (2024)",
+            "Average Package (2025)",
+            "Course",
+            "Average Package (2021)",
+            "Average Package (2022)",
+            "Average Package (2023)"
+          ],
+          "rows": [
+            [
+              "PGPX",
+              "INR 35.68 LPA",
+              "INR 36.41 LPA",
+              "INR 37.25 LPA"
+            ],
+            [
+              "PGP",
+              "INR 27.54 LPA",
+              "INR 32.79 LPA",
+              "INR 34.45 LPA"
+            ],
+            [
+              "PGP FABM",
+              "INR 17.79 LPA",
+              "INR 21.49 LPA",
+              "INR 20.11 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the average salary trends witnessed at IIM Ahmedabad in recent past?",
+      "answer": "The average salary trends witnessed during IIM Ahmedabad placements over the past three years for PGP, PGP FABM and PGPX programs are presented below: Course Average Package (2021) Average Package (2022) Average Package (2023) PGP INR 27.54 LPA INR 32.79 LPA INR 34.45 LPA PGP FABM INR 17.79 LPA INR 21.49 LPA INR 20.11 LPA Course Average Package (2023) Average Package (2024) Average Package (2025) PGPX INR 35.68 LPA INR 36.41 LPA INR 37.25 LPA",
+      "tables": [
+        {
+          "headers": [
+            "Course",
+            "Average Package (2021)",
+            "Average Package (2022)",
+            "Average Package (2023)",
+            "Course",
+            "Average Package (2023)",
+            "Average Package (2024)",
+            "Average Package (2025)"
+          ],
+          "rows": [
+            [
+              "PGP",
+              "INR 27.54 LPA",
+              "INR 32.79 LPA",
+              "INR 34.45 LPA"
+            ],
+            [
+              "PGP FABM",
+              "INR 17.79 LPA",
+              "INR 21.49 LPA",
+              "INR 20.11 LPA"
+            ],
+            [
+              "PGPX",
+              "INR 35.68 LPA",
+              "INR 36.41 LPA",
+              "INR 37.25 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the median package offered during recent placements at IIM Ahmedabad?",
+      "answer": "The course-wise median package offered during IIM Ahmedabad placements over the past three years is presented below: Course Median Package (2021) Median Package (2022) Median Package (2023) PGP INR 27.6 LPA INR 31.49 LPA INR 31.58 LPA PGP FABM INR 16.84 LPA INR 20 LPA INR 20 LPA Course Median Package (2023) Median Package (2024) Median Package (2025) PGPX INR 33.05 LPA INR 35 LPA INR 34.41 LPA",
+      "tables": [
+        {
+          "headers": [
+            "Course",
+            "Median Package (2021)",
+            "Median Package (2022)",
+            "Median Package (2023)",
+            "Course",
+            "Median Package (2023)",
+            "Median Package (2024)",
+            "Median Package (2025)"
+          ],
+          "rows": [
+            [
+              "PGP",
+              "INR 27.6 LPA",
+              "INR 31.49 LPA",
+              "INR 31.58 LPA"
+            ],
+            [
+              "PGP FABM",
+              "INR 16.84 LPA",
+              "INR 20 LPA",
+              "INR 20 LPA"
+            ],
+            [
+              "PGPX",
+              "INR 33.05 LPA",
+              "INR 35 LPA",
+              "INR 34.41 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How are IIM Ahmedabad PGP placements?",
+      "answer": "The key highlights of IIM Ahmedabad PGP placements 2023 as compared with 2022 and 2021 are presented below: Particulars PGP Placement Statistics (2021) PGP Placement Statistics (2022) PGP Placement Statistics (2023) Highest package INR 55 LPA INR 61.48 LPA INR 1.46 crore per annum Average package INR 27.54 LPA INR 32.79 LPA INR 34.45 LPA Median package INR 27.60 LPA INR 31.49 LPA INR 31.58 LPA Lowest package INR 11 LPA INR 17.50 LPA INR 18.05 LPA Companies visited 131 190 188 Roles offered 170 Around 220 Around 280 Offers accepted / Students Placed 374 382 385 Eligible students 388 382 389 Students opted out 14 3 4 Students not placed 0 0 0 Note: The mean package is considered as the average package in the above-mentioned table. Further, the Maximum Earning Potential is considered for the salary packages shown above.",
+      "tables": [
+        {
+          "headers": [
+            "Particulars",
+            "PGP Placement Statistics (2021)",
+            "PGP Placement Statistics (2022)",
+            "PGP Placement Statistics (2023)"
+          ],
+          "rows": [
+            [
+              "Highest package",
+              "INR 55 LPA",
+              "INR 61.48 LPA",
+              "INR 1.46 crore per annum"
+            ],
+            [
+              "Average package",
+              "INR 27.54 LPA",
+              "INR 32.79 LPA",
+              "INR 34.45 LPA"
+            ],
+            [
+              "Median package",
+              "INR 27.60 LPA",
+              "INR 31.49 LPA",
+              "INR 31.58 LPA"
+            ],
+            [
+              "Lowest package",
+              "INR 11 LPA",
+              "INR 17.50 LPA",
+              "INR 18.05 LPA"
+            ],
+            [
+              "Companies visited",
+              "131",
+              "190",
+              "188"
+            ],
+            [
+              "Roles offered",
+              "170",
+              "Around 220",
+              "Around 280"
+            ],
+            [
+              "Offers accepted / Students Placed",
+              "374",
+              "382",
+              "385"
+            ],
+            [
+              "Eligible students",
+              "388",
+              "382",
+              "389"
+            ],
+            [
+              "Students opted out",
+              "14",
+              "3",
+              "4"
+            ],
+            [
+              "Students not placed",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which sector receives the highest package during IIM Ahmedabad PGP placements?",
+      "answer": "BFSI sector received the highest package of INR 1.46 crore per annum during IIM Ahmedabad PGP placements 2023. The sector-wise highest, average and median package offered during IIM Ahmedabad PGP placements 2023 is presented below: Sectors PGP Highest Package (2023) PGP Average Package (2023) PGP Median Package (2023) Automobile INR 30.24 LPA INR 30.24 LPA INR 30.24 LPA BFSI INR 1.46 crore per annum INR 41.33 LPA INR 35.05 LPA Conglomerates INR 30 LPA INR 25.53 LPA INR 25 LPA Consulting INR 56 LPA INR 34.55 LPA INR 34.50 LPA Consumer Services INR 26 LPA INR 26 LPA INR 26 LPA Education Technology INR 32.15 LPA INR 32.15 LPA INR 32.15 LPA Engineering Technology INR 28.32 LPA INR 28.32 LPA INR 28.32 LPA FMCG INR 33.39 LPA INR 29.43 LPA INR 29.39 LPA IT INR 42.48 LPA INR 31.87 LPA INR 32 LPA IT Analytics INR 28.22 LPA INR 25.80 LPA INR 25 LPA IT Consulting INR 28 LPA INR 28 LPA INR 28 LPA IT Software INR 42.15 LPA INR 35.94 LPA INR 37.43 LPA IT Solutions INR 34.79 LPA INR 32.31 LPA INR 34.74 LPA Logistics INR 28.80 LPA INR 28.80 LPA INR 28.80 LPA Manufacturing INR 66 LPA INR 45.60 LPA INR 45.60 LPA Media / Communications INR 27 LPA INR 26 LPA INR 26 LPA Mining INR 32.17 LPA INR 32.17 LPA INR 32.17 LPA Online Services INR 29.01 LPA INR 29.01 LPA INR 29.01 LPA Artificial Intelligence INR 32.40 LPA INR 32.40 LPA INR 32.40 LPA Wellness & Fitness Services INR 25.70 LPA INR 25.70 LPA INR 25.70 LPA Energy INR 26.50 LPA INR 26.50 LPA INR 26.50 LPA Pharmaceutical INR 31.20 LPA INR 27.04 LPA INR 28 LPA Real Estate INR 31.20 LPA INR 31.20 LPA INR 31.20 LPA Retail B2B & B2C INR 29.35 LPA INR 29.35 LPA INR 29.35 LPA Telecommunication INR 30 LPA INR 30 LPA INR 30 LPA Note: The mean package is considered as the average package in the above-mentioned table. Further, the Maximum Earning Potential is considered for the salary packages shown above.",
+      "tables": [
+        {
+          "headers": [
+            "Sectors",
+            "PGP Highest Package (2023)",
+            "PGP Average Package (2023)",
+            "PGP Median Package (2023)"
+          ],
+          "rows": [
+            [
+              "Automobile",
+              "INR 30.24 LPA",
+              "INR 30.24 LPA",
+              "INR 30.24 LPA"
+            ],
+            [
+              "BFSI",
+              "INR 1.46 crore per annum",
+              "INR 41.33 LPA",
+              "INR 35.05 LPA"
+            ],
+            [
+              "Conglomerates",
+              "INR 30 LPA",
+              "INR 25.53 LPA",
+              "INR 25 LPA"
+            ],
+            [
+              "Consulting",
+              "INR 56 LPA",
+              "INR 34.55 LPA",
+              "INR 34.50 LPA"
+            ],
+            [
+              "Consumer Services",
+              "INR 26 LPA",
+              "INR 26 LPA",
+              "INR 26 LPA"
+            ],
+            [
+              "Education Technology",
+              "INR 32.15 LPA",
+              "INR 32.15 LPA",
+              "INR 32.15 LPA"
+            ],
+            [
+              "Engineering Technology",
+              "INR 28.32 LPA",
+              "INR 28.32 LPA",
+              "INR 28.32 LPA"
+            ],
+            [
+              "FMCG",
+              "INR 33.39 LPA",
+              "INR 29.43 LPA",
+              "INR 29.39 LPA"
+            ],
+            [
+              "IT",
+              "INR 42.48 LPA",
+              "INR 31.87 LPA",
+              "INR 32 LPA"
+            ],
+            [
+              "IT Analytics",
+              "INR 28.22 LPA",
+              "INR 25.80 LPA",
+              "INR 25 LPA"
+            ],
+            [
+              "IT Consulting",
+              "INR 28 LPA",
+              "INR 28 LPA",
+              "INR 28 LPA"
+            ],
+            [
+              "IT Software",
+              "INR 42.15 LPA",
+              "INR 35.94 LPA",
+              "INR 37.43 LPA"
+            ],
+            [
+              "IT Solutions",
+              "INR 34.79 LPA",
+              "INR 32.31 LPA",
+              "INR 34.74 LPA"
+            ],
+            [
+              "Logistics",
+              "INR 28.80 LPA",
+              "INR 28.80 LPA",
+              "INR 28.80 LPA"
+            ],
+            [
+              "Manufacturing",
+              "INR 66 LPA",
+              "INR 45.60 LPA",
+              "INR 45.60 LPA"
+            ],
+            [
+              "Media / Communications",
+              "INR 27 LPA",
+              "INR 26 LPA",
+              "INR 26 LPA"
+            ],
+            [
+              "Mining",
+              "INR 32.17 LPA",
+              "INR 32.17 LPA",
+              "INR 32.17 LPA"
+            ],
+            [
+              "Online Services",
+              "INR 29.01 LPA",
+              "INR 29.01 LPA",
+              "INR 29.01 LPA"
+            ],
+            [
+              "Artificial Intelligence",
+              "INR 32.40 LPA",
+              "INR 32.40 LPA",
+              "INR 32.40 LPA"
+            ],
+            [
+              "Wellness & Fitness Services",
+              "INR 25.70 LPA",
+              "INR 25.70 LPA",
+              "INR 25.70 LPA"
+            ],
+            [
+              "Energy",
+              "INR 26.50 LPA",
+              "INR 26.50 LPA",
+              "INR 26.50 LPA"
+            ],
+            [
+              "Pharmaceutical",
+              "INR 31.20 LPA",
+              "INR 27.04 LPA",
+              "INR 28 LPA"
+            ],
+            [
+              "Real Estate",
+              "INR 31.20 LPA",
+              "INR 31.20 LPA",
+              "INR 31.20 LPA"
+            ],
+            [
+              "Retail B2B & B2C",
+              "INR 29.35 LPA",
+              "INR 29.35 LPA",
+              "INR 29.35 LPA"
+            ],
+            [
+              "Telecommunication",
+              "INR 30 LPA",
+              "INR 30 LPA",
+              "INR 30 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which is the top recruiting sector during IIM Ahmedabad PGP summer placements?",
+      "answer": "The sector and domain-wise offers accepted during IIM Ahmedabad PGP summer placements 2025 for the batch of 2024-26 are presented below: Sectors Offers Accepted (PGP Batch 2024-26) BFSI 83 Conglomerates 28 Consulting 156 Consumer Durables 8 FMCG 45 Consumer Services 5 Engineering / Technology 7 Environment & Energy 3 Food Processing 1 IT 17 Manufacturing 16 Media & Entertainment 1 Pharmaceutical / Healthcare 16 Retail 2 Social Enterprises & NGOs 6 Functions Offers Accepted (PGP Batch 2024-26) Business Development 9 Consulting 153 Finance 72 General Management 65 Marketing / Sales 53 Operations 1 Product / Category Management 16 Research & Advisory 6 Strategy 12 Supply Chain Management 2 Systems / IT 5",
+      "tables": [
+        {
+          "headers": [
+            "Sectors",
+            "Offers Accepted (PGP Batch 2024-26)",
+            "Functions",
+            "Offers Accepted (PGP Batch 2024-26)"
+          ],
+          "rows": [
+            [
+              "BFSI",
+              "83"
+            ],
+            [
+              "Conglomerates",
+              "28"
+            ],
+            [
+              "Consulting",
+              "156"
+            ],
+            [
+              "Consumer Durables",
+              "8"
+            ],
+            [
+              "FMCG",
+              "45"
+            ],
+            [
+              "Consumer Services",
+              "5"
+            ],
+            [
+              "Engineering / Technology",
+              "7"
+            ],
+            [
+              "Environment & Energy",
+              "3"
+            ],
+            [
+              "Food Processing",
+              "1"
+            ],
+            [
+              "IT",
+              "17"
+            ],
+            [
+              "Manufacturing",
+              "16"
+            ],
+            [
+              "Media & Entertainment",
+              "1"
+            ],
+            [
+              "Pharmaceutical / Healthcare",
+              "16"
+            ],
+            [
+              "Retail",
+              "2"
+            ],
+            [
+              "Social Enterprises & NGOs",
+              "6"
+            ],
+            [
+              "Business Development",
+              "9"
+            ],
+            [
+              "Consulting",
+              "153"
+            ],
+            [
+              "Finance",
+              "72"
+            ],
+            [
+              "General Management",
+              "65"
+            ],
+            [
+              "Marketing / Sales",
+              "53"
+            ],
+            [
+              "Operations",
+              "1"
+            ],
+            [
+              "Product / Category Management",
+              "16"
+            ],
+            [
+              "Research & Advisory",
+              "6"
+            ],
+            [
+              "Strategy",
+              "12"
+            ],
+            [
+              "Supply Chain Management",
+              "2"
+            ],
+            [
+              "Systems / IT",
+              "5"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the salary package offered during IIM Ahmedabad PGPX placements?",
+      "answer": "The salary package offered during IIM Ahmedabad PGPX placements over the past three years is presented below: Particulars PGPX Placement Statistics (2023) PGPX Placement Statistics (2024) PGPX Placement Statistics (2025) Average package INR 35.68 LPA INR 36.41 LPA INR 37.25 LPA Highest package INR 108 LPA INR 54.8 LPA INR 76.5 LPA Median package INR 33.05 LPA INR 35 LPA INR 34.41 LPA Lowest package INR 18 LPA INR 21.46 LPA INR 26 LPA",
+      "tables": [
+        {
+          "headers": [
+            "Particulars",
+            "PGPX Placement Statistics (2023)",
+            "PGPX Placement Statistics (2024)",
+            "PGPX Placement Statistics (2025)"
+          ],
+          "rows": [
+            [
+              "Average package",
+              "INR 35.68 LPA",
+              "INR 36.41 LPA",
+              "INR 37.25 LPA"
+            ],
+            [
+              "Highest package",
+              "INR 108 LPA",
+              "INR 54.8 LPA",
+              "INR 76.5 LPA"
+            ],
+            [
+              "Median package",
+              "INR 33.05 LPA",
+              "INR 35 LPA",
+              "INR 34.41 LPA"
+            ],
+            [
+              "Lowest package",
+              "INR 18 LPA",
+              "INR 21.46 LPA",
+              "INR 26 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which is the top recruiting function during IIM Ahmedabad PGPX placements?",
+      "answer": "The function-wise offers accepted during IIM Ahmedabad PGPX placements 2025 is presented below: Functions PGPX Offers Accepted (2025) Consulting 39 (1 international) Product / Category Management 27 Sales / Marketing 14 (1 international) General Management 12 Strategy 11 Supply Chain / Operations 8 Business Development 7 (2 international) Project Management 7 Finance 5 Systems / IT 4 IT Consulting 2",
+      "tables": [
+        {
+          "headers": [
+            "Functions",
+            "PGPX Offers Accepted (2025)"
+          ],
+          "rows": [
+            [
+              "Consulting",
+              "39 (1 international)"
+            ],
+            [
+              "Product / Category Management",
+              "27"
+            ],
+            [
+              "Sales / Marketing",
+              "14 (1 international)"
+            ],
+            [
+              "General Management",
+              "12"
+            ],
+            [
+              "Strategy",
+              "11"
+            ],
+            [
+              "Supply Chain / Operations",
+              "8"
+            ],
+            [
+              "Business Development",
+              "7 (2 international)"
+            ],
+            [
+              "Project Management",
+              "7"
+            ],
+            [
+              "Finance",
+              "5"
+            ],
+            [
+              "Systems / IT",
+              "4"
+            ],
+            [
+              "IT Consulting",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which sector receives the highest package during IIM Ahmedabad PGPX placements?",
+      "answer": "The sector wise highest, average and lowest package received during IIM Ahmedabad placements 2025 is given below: Sectors PGPX Highest Package (2025) PGPX Average Package (2025) PGPX Lowest Package (2025) Automotive INR 43 LPA INR 40.6 LPA INR 37 LPA BFSI INR 76.5 LPA INR 39.75 LPA INR 26.76 LPA Conglomerates INR 43 LPA INR 34.25 LPA INR 30 LPA Consulting INR 42.76 LPA INR 32.91 LPA INR 26 LPA Energy INR 33.6 LPA INR 33.6 LPA INR 33.6 LPA FMCG INR 44.5 LPA INR 44.5 LPA INR 44.5 LPA IT Consulting INR 65 LPA INR 36.98 LPA INR 31.65 LPA IT Services INR 37.41 LPA INR 32.45 LPA INR 27 LPA IT Solutions INR 45.62 LPA INR 35.14 LPA INR 28 LPA Logistics INR 37 LPA INR 37 LPA INR 37 LPA Manufacturing INR 49.47 LPA INR 42.62 LPA INR 35.9 LPA Media/ Advertisement INR 29 LPA INR 28.33 LPA INR 27 LPA Online Services INR 51.75 LPA INR 37.29 LPA INR 28.65 LPA Others INR 46.41 LPA INR 37.47 LPA INR 30 LPA Pharma/Healthcare INR 65 LPA INR 40.97 LPA INR 27 LPA",
+      "tables": [
+        {
+          "headers": [
+            "Sectors",
+            "PGPX Highest Package (2025)",
+            "PGPX Average Package (2025)",
+            "PGPX Lowest Package (2025)"
+          ],
+          "rows": [
+            [
+              "Automotive",
+              "INR 43 LPA",
+              "INR 40.6 LPA",
+              "INR 37 LPA"
+            ],
+            [
+              "BFSI",
+              "INR 76.5 LPA",
+              "INR 39.75 LPA",
+              "INR 26.76 LPA"
+            ],
+            [
+              "Conglomerates",
+              "INR 43 LPA",
+              "INR 34.25 LPA",
+              "INR 30 LPA"
+            ],
+            [
+              "Consulting",
+              "INR 42.76 LPA",
+              "INR 32.91 LPA",
+              "INR 26 LPA"
+            ],
+            [
+              "Energy",
+              "INR 33.6 LPA",
+              "INR 33.6 LPA",
+              "INR 33.6 LPA"
+            ],
+            [
+              "FMCG",
+              "INR 44.5 LPA",
+              "INR 44.5 LPA",
+              "INR 44.5 LPA"
+            ],
+            [
+              "IT Consulting",
+              "INR 65 LPA",
+              "INR 36.98 LPA",
+              "INR 31.65 LPA"
+            ],
+            [
+              "IT Services",
+              "INR 37.41 LPA",
+              "INR 32.45 LPA",
+              "INR 27 LPA"
+            ],
+            [
+              "IT Solutions",
+              "INR 45.62 LPA",
+              "INR 35.14 LPA",
+              "INR 28 LPA"
+            ],
+            [
+              "Logistics",
+              "INR 37 LPA",
+              "INR 37 LPA",
+              "INR 37 LPA"
+            ],
+            [
+              "Manufacturing",
+              "INR 49.47 LPA",
+              "INR 42.62 LPA",
+              "INR 35.9 LPA"
+            ],
+            [
+              "Media/ Advertisement",
+              "INR 29 LPA",
+              "INR 28.33 LPA",
+              "INR 27 LPA"
+            ],
+            [
+              "Online Services",
+              "INR 51.75 LPA",
+              "INR 37.29 LPA",
+              "INR 28.65 LPA"
+            ],
+            [
+              "Others",
+              "INR 46.41 LPA",
+              "INR 37.47 LPA",
+              "INR 30 LPA"
+            ],
+            [
+              "Pharma/Healthcare",
+              "INR 65 LPA",
+              "INR 40.97 LPA",
+              "INR 27 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the summer placement record for PGP program at IIM Ahmedabad?",
+      "answer": "The key highlights of IIM Ahmedabad summer placements for the PGP batch of 2024-26 are presented below: Particulars PGP Summer Placements 2025 (2024-26 Batch) Total participating students 394 Students placed 394 Offers accepted 394 International offers 12 Companies visited 155 Roles offered 194 Top recruiting sector Consulting (156 offers accepted)",
+      "tables": [
+        {
+          "headers": [
+            "Particulars",
+            "PGP Summer Placements 2025 (2024-26 Batch)"
+          ],
+          "rows": [
+            [
+              "Total participating students",
+              "394"
+            ],
+            [
+              "Students placed",
+              "394"
+            ],
+            [
+              "Offers accepted",
+              "394"
+            ],
+            [
+              "International offers",
+              "12"
+            ],
+            [
+              "Companies visited",
+              "155"
+            ],
+            [
+              "Roles offered",
+              "194"
+            ],
+            [
+              "Top recruiting sector",
+              "Consulting (156 offers accepted)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the summer placement record for PGP FABM program at IIM Ahmedabad?",
+      "answer": "The key highlights of IIM Ahmedabad summer placements for the PGP batch of 2024-26 are presented below: Particulars PGP FABM Summer Placements 2025 (2024-26 Batch) Total participating students 47 Students placed 47 Offers accepted 47 International offers 0 Top recruiting sector FMCG (11 offers accepted",
+      "tables": [
+        {
+          "headers": [
+            "Particulars",
+            "PGP FABM Summer Placements 2025 (2024-26 Batch)"
+          ],
+          "rows": [
+            [
+              "Total participating students",
+              "47"
+            ],
+            [
+              "Students placed",
+              "47"
+            ],
+            [
+              "Offers accepted",
+              "47"
+            ],
+            [
+              "International offers",
+              "0"
+            ],
+            [
+              "Top recruiting sector",
+              "FMCG (11 offers accepted"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How many offers are made during IIM Ahmedabad PGP summer placements?",
+      "answer": "A total of 394 offers were accepted out of which 12 were international offers during IIM Ahmedabad PGP summer placements 2025. The sector-wise offers accepted by the PGP batch of 2024-26 is presented below: Sectors Offers Accepted (PGP Batch 2024-26) BFSI 83 Conglomerates 28 Consulting 156 Consumer Durables 8 FMCG 45 Consumer Services 5 Engineering / Technology 7 Environment & Energy 3 Food Processing 1 IT 17 Manufacturing 16 Media & Entertainment 1 Pharmaceutical / Healthcare 16 Retail 2 Social Enterprises & NGOs 6",
+      "tables": [
+        {
+          "headers": [
+            "Sectors",
+            "Offers Accepted (PGP Batch 2024-26)"
+          ],
+          "rows": [
+            [
+              "BFSI",
+              "83"
+            ],
+            [
+              "Conglomerates",
+              "28"
+            ],
+            [
+              "Consulting",
+              "156"
+            ],
+            [
+              "Consumer Durables",
+              "8"
+            ],
+            [
+              "FMCG",
+              "45"
+            ],
+            [
+              "Consumer Services",
+              "5"
+            ],
+            [
+              "Engineering / Technology",
+              "7"
+            ],
+            [
+              "Environment & Energy",
+              "3"
+            ],
+            [
+              "Food Processing",
+              "1"
+            ],
+            [
+              "IT",
+              "17"
+            ],
+            [
+              "Manufacturing",
+              "16"
+            ],
+            [
+              "Media & Entertainment",
+              "1"
+            ],
+            [
+              "Pharmaceutical / Healthcare",
+              "16"
+            ],
+            [
+              "Retail",
+              "2"
+            ],
+            [
+              "Social Enterprises & NGOs",
+              "6"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which sector has the best placement record for PGP placements at IIM Ahmedabad?",
+      "answer": "The sector-wise offers accepted during IIM Ahmedabad PGP placements 2023 is presented below: Sectors PGP Offers Received (2023) Consulting 179 (2 international offer) BFSI 87 (4 international offer) Conglomerates 26 (3 international offer) FMCG 17 IT Consulting 12 IT Software 12 Pharmaceutical 9 IT 7 Retail B2B & B2C 6 IT Analytics 4 IT Solutions 4 Real Estate 4 Consumer Services 2 Manufacturing 2 Telecommunication 2 Media / Communication 2 Artificial Intelligence 2 Automobile 1 Education Technology 1 Engineering Technology 1 Logistics 1 Mining 1 Online Services 1 Wellness & Fitness Services 1 Energy 1 Further, the sector-wise salary package offered during IIM Ahmedabad PGP placements 2023 is presented below: Sectors PGP Highest Package (2023) PGP Average Package (2023) PGP Median Package (2023) Automobile INR 30.24 LPA INR 30.24 LPA INR 30.24 LPA BFSI INR 1.46 crore per annum INR 41.33 LPA INR 35.05 LPA Conglomerates INR 30 LPA INR 25.53 LPA INR 25 LPA Consulting INR 56 LPA INR 34.55 LPA INR 34.50 LPA Consumer Services INR 26 LPA INR 26 LPA INR 26 LPA Education Technology INR 32.15 LPA INR 32.15 LPA INR 32.15 LPA Engineering Technology INR 28.32 LPA INR 28.32 LPA INR 28.32 LPA FMCG INR 33.39 LPA INR 29.43 LPA INR 29.39 LPA IT INR 42.48 LPA INR 31.87 LPA INR 32 LPA IT Analytics INR 28.22 LPA INR 25.80 LPA INR 25 LPA IT Consulting INR 28 LPA INR 28 LPA INR 28 LPA IT Software INR 42.15 LPA INR 35.94 LPA INR 37.43 LPA IT Solutions INR 34.79 LPA INR 32.31 LPA INR 34.74 LPA Logistics INR 28.80 LPA INR 28.80 LPA INR 28.80 LPA Manufacturing INR 66 LPA INR 45.60 LPA INR 45.60 LPA Media / Communications INR 27 LPA INR 26 LPA INR 26 LPA Mining INR 32.17 LPA INR 32.17 LPA INR 32.17 LPA Online Services INR 29.01 LPA INR 29.01 LPA INR 29.01 LPA Artificial Intelligence INR 32.40 LPA INR 32.40 LPA INR 32.40 LPA Wellness & Fitness Services INR 25.70 LPA INR 25.70 LPA INR 25.70 LPA Energy INR 26.50 LPA INR 26.50 LPA INR 26.50 LPA Pharmaceutical INR 31.20 LPA INR 27.04 LPA INR 28 LPA Real Estate INR 31.20 LPA INR 31.20 LPA INR 31.20 LPA Retail B2B & B2C INR 29.35 LPA INR 29.35 LPA INR 29.35 LPA Telecommunication INR 30 LPA INR 30 LPA INR 30 LPA Note: The mean package is considered as the average package in the above-mentioned table. Further, the Maximum Earning Potential is considered for the salary packages shown above.",
+      "tables": [
+        {
+          "headers": [
+            "Sectors",
+            "PGP Offers Received (2023)"
+          ],
+          "rows": [
+            [
+              "Consulting",
+              "179 (2 international offer)"
+            ],
+            [
+              "BFSI",
+              "87 (4 international offer)"
+            ],
+            [
+              "Conglomerates",
+              "26 (3 international offer)"
+            ],
+            [
+              "FMCG",
+              "17"
+            ],
+            [
+              "IT Consulting",
+              "12"
+            ],
+            [
+              "IT Software",
+              "12"
+            ],
+            [
+              "Pharmaceutical",
+              "9"
+            ],
+            [
+              "IT",
+              "7"
+            ],
+            [
+              "Retail B2B & B2C",
+              "6"
+            ],
+            [
+              "IT Analytics",
+              "4"
+            ],
+            [
+              "IT Solutions",
+              "4"
+            ],
+            [
+              "Real Estate",
+              "4"
+            ],
+            [
+              "Consumer Services",
+              "2"
+            ],
+            [
+              "Manufacturing",
+              "2"
+            ],
+            [
+              "Telecommunication",
+              "2"
+            ],
+            [
+              "Media / Communication",
+              "2"
+            ],
+            [
+              "Artificial Intelligence",
+              "2"
+            ],
+            [
+              "Automobile",
+              "1"
+            ],
+            [
+              "Education Technology",
+              "1"
+            ],
+            [
+              "Engineering Technology",
+              "1"
+            ],
+            [
+              "Logistics",
+              "1"
+            ],
+            [
+              "Mining",
+              "1"
+            ],
+            [
+              "Online Services",
+              "1"
+            ],
+            [
+              "Wellness & Fitness Services",
+              "1"
+            ],
+            [
+              "Energy",
+              "1"
+            ]
+          ]
+        },
+        {
+          "headers": [
+            "Sectors",
+            "PGP Highest Package (2023)",
+            "PGP Average Package (2023)",
+            "PGP Median Package (2023)"
+          ],
+          "rows": [
+            [
+              "Automobile",
+              "INR 30.24 LPA",
+              "INR 30.24 LPA",
+              "INR 30.24 LPA"
+            ],
+            [
+              "BFSI",
+              "INR 1.46 crore per annum",
+              "INR 41.33 LPA",
+              "INR 35.05 LPA"
+            ],
+            [
+              "Conglomerates",
+              "INR 30 LPA",
+              "INR 25.53 LPA",
+              "INR 25 LPA"
+            ],
+            [
+              "Consulting",
+              "INR 56 LPA",
+              "INR 34.55 LPA",
+              "INR 34.50 LPA"
+            ],
+            [
+              "Consumer Services",
+              "INR 26 LPA",
+              "INR 26 LPA",
+              "INR 26 LPA"
+            ],
+            [
+              "Education Technology",
+              "INR 32.15 LPA",
+              "INR 32.15 LPA",
+              "INR 32.15 LPA"
+            ],
+            [
+              "Engineering Technology",
+              "INR 28.32 LPA",
+              "INR 28.32 LPA",
+              "INR 28.32 LPA"
+            ],
+            [
+              "FMCG",
+              "INR 33.39 LPA",
+              "INR 29.43 LPA",
+              "INR 29.39 LPA"
+            ],
+            [
+              "IT",
+              "INR 42.48 LPA",
+              "INR 31.87 LPA",
+              "INR 32 LPA"
+            ],
+            [
+              "IT Analytics",
+              "INR 28.22 LPA",
+              "INR 25.80 LPA",
+              "INR 25 LPA"
+            ],
+            [
+              "IT Consulting",
+              "INR 28 LPA",
+              "INR 28 LPA",
+              "INR 28 LPA"
+            ],
+            [
+              "IT Software",
+              "INR 42.15 LPA",
+              "INR 35.94 LPA",
+              "INR 37.43 LPA"
+            ],
+            [
+              "IT Solutions",
+              "INR 34.79 LPA",
+              "INR 32.31 LPA",
+              "INR 34.74 LPA"
+            ],
+            [
+              "Logistics",
+              "INR 28.80 LPA",
+              "INR 28.80 LPA",
+              "INR 28.80 LPA"
+            ],
+            [
+              "Manufacturing",
+              "INR 66 LPA",
+              "INR 45.60 LPA",
+              "INR 45.60 LPA"
+            ],
+            [
+              "Media / Communications",
+              "INR 27 LPA",
+              "INR 26 LPA",
+              "INR 26 LPA"
+            ],
+            [
+              "Mining",
+              "INR 32.17 LPA",
+              "INR 32.17 LPA",
+              "INR 32.17 LPA"
+            ],
+            [
+              "Online Services",
+              "INR 29.01 LPA",
+              "INR 29.01 LPA",
+              "INR 29.01 LPA"
+            ],
+            [
+              "Artificial Intelligence",
+              "INR 32.40 LPA",
+              "INR 32.40 LPA",
+              "INR 32.40 LPA"
+            ],
+            [
+              "Wellness & Fitness Services",
+              "INR 25.70 LPA",
+              "INR 25.70 LPA",
+              "INR 25.70 LPA"
+            ],
+            [
+              "Energy",
+              "INR 26.50 LPA",
+              "INR 26.50 LPA",
+              "INR 26.50 LPA"
+            ],
+            [
+              "Pharmaceutical",
+              "INR 31.20 LPA",
+              "INR 27.04 LPA",
+              "INR 28 LPA"
+            ],
+            [
+              "Real Estate",
+              "INR 31.20 LPA",
+              "INR 31.20 LPA",
+              "INR 31.20 LPA"
+            ],
+            [
+              "Retail B2B & B2C",
+              "INR 29.35 LPA",
+              "INR 29.35 LPA",
+              "INR 29.35 LPA"
+            ],
+            [
+              "Telecommunication",
+              "INR 30 LPA",
+              "INR 30 LPA",
+              "INR 30 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which sector has the best placement record during IIM Ahmedabad's PGP FABM placements?",
+      "answer": "The sector-wise offers accepted during IIM Ahmedabad PGP FABM placements 2023 is presented below: Sectors PGP FABM Offers Received (2023) Agri Inputs 19 Food Processing 9 Consulting 7 FMCG 4 BFSI 1 Food Production 1 IT 1 International Trade 1 Logistics 1 EdTech 1 Pharma & Healthcare 1 Further, the sector-wise salary package offered during IIM Ahmedabad PGP FABM placements 2023 is presented below: Sectors PGP FABM Highest Package (2023) PGP FABM Average Package (2023) PGP FABM Median Package (2023) Agri Inputs INR 24.21 LPA INR 20.31 LPA INR 20 LPA BFSI INR 30 LPA INR 30 LPA INR 30 LPA Consulting INR 21.37 LPA INR 19.08 LPA INR 18.16 LPA FMCG INR 33.39 LPA INR 23.74 LPA INR 20.96 LPA Food Processing INR 21.04 LPA INR 18.69 LPA INR 18 LPA Food Production INR 15.48 LPA INR 15.48 LPA INR 15.48 LPA IT INR 16 LPA INR 16 LPA INR 16 LPA International Trade INR 19.96 LPA INR 19.96 LPA INR 19.96 LPA Logistics INR 22.25 LPA INR 22.25 LPA INR 22.25 LPA Others (EdTech) INR 18 LPA INR 18 LPA INR 18 LPA Pharma & Healthcare INR 21 LPA INR 21 LPA INR 21 LPA Note: The mean package is considered as the average package in the above-mentioned table. Further, the Maximum Earning Potential is considered for the salary packages shown above.",
+      "tables": [
+        {
+          "headers": [
+            "Sectors",
+            "PGP FABM Offers Received (2023)"
+          ],
+          "rows": [
+            [
+              "Agri Inputs",
+              "19"
+            ],
+            [
+              "Food Processing",
+              "9"
+            ],
+            [
+              "Consulting",
+              "7"
+            ],
+            [
+              "FMCG",
+              "4"
+            ],
+            [
+              "BFSI",
+              "1"
+            ],
+            [
+              "Food Production",
+              "1"
+            ],
+            [
+              "IT",
+              "1"
+            ],
+            [
+              "International Trade",
+              "1"
+            ],
+            [
+              "Logistics",
+              "1"
+            ],
+            [
+              "EdTech",
+              "1"
+            ],
+            [
+              "Pharma & Healthcare",
+              "1"
+            ]
+          ]
+        },
+        {
+          "headers": [
+            "Sectors",
+            "PGP FABM Highest Package (2023)",
+            "PGP FABM Average Package (2023)",
+            "PGP FABM Median Package (2023)"
+          ],
+          "rows": [
+            [
+              "Agri Inputs",
+              "INR 24.21 LPA",
+              "INR 20.31 LPA",
+              "INR 20 LPA"
+            ],
+            [
+              "BFSI",
+              "INR 30 LPA",
+              "INR 30 LPA",
+              "INR 30 LPA"
+            ],
+            [
+              "Consulting",
+              "INR 21.37 LPA",
+              "INR 19.08 LPA",
+              "INR 18.16 LPA"
+            ],
+            [
+              "FMCG",
+              "INR 33.39 LPA",
+              "INR 23.74 LPA",
+              "INR 20.96 LPA"
+            ],
+            [
+              "Food Processing",
+              "INR 21.04 LPA",
+              "INR 18.69 LPA",
+              "INR 18 LPA"
+            ],
+            [
+              "Food Production",
+              "INR 15.48 LPA",
+              "INR 15.48 LPA",
+              "INR 15.48 LPA"
+            ],
+            [
+              "IT",
+              "INR 16 LPA",
+              "INR 16 LPA",
+              "INR 16 LPA"
+            ],
+            [
+              "International Trade",
+              "INR 19.96 LPA",
+              "INR 19.96 LPA",
+              "INR 19.96 LPA"
+            ],
+            [
+              "Logistics",
+              "INR 22.25 LPA",
+              "INR 22.25 LPA",
+              "INR 22.25 LPA"
+            ],
+            [
+              "Others (EdTech)",
+              "INR 18 LPA",
+              "INR 18 LPA",
+              "INR 18 LPA"
+            ],
+            [
+              "Pharma & Healthcare",
+              "INR 21 LPA",
+              "INR 21 LPA",
+              "INR 21 LPA"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How many offers are made by the Consulting sector during IIM Ahmedabad placements?",
+      "answer": "The number of offers accepted in the IT Consulting and Consulting sectors during PGPX placements 2025 was 32 and 13, respectively. Consulting sector emerged as the top recruiting sector during PGP placements 2023. A total of 179 offers were made by the Consulting sector during PGP placements 2023. In addition, 26 offers were made by the Consulting sector during PGPX placements 2024. For PGP FABM program, 7 offers were made by the Consulting sector during IIMA placements 2023.",
+      "tables": []
+    }
+  ],
+  "cut_off": [
+    {
+      "type": "qualifying_cutoff",
+      "table": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "type": "course_cutoff",
+      "course_name": "ePost Graduate Diploma in Advanced Business Analytics (ePGD-ABA) - IIM Ahmedabad : CAT percentile Cutoff (General-All India)",
+      "cutoff_table": [
+        {
+          "Section": "Overall",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "Quants",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "VA-RC",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "DI-LR",
+          "2023": "99",
+          "2024": "99"
+        }
+      ]
+    },
+    {
+      "type": "course_cutoff",
+      "course_name": "MBA in Food and Agri Business Management (MBA-FABM) - IIM Ahmedabad : CAT percentile Cutoff (General-All India)",
+      "cutoff_table": [
+        {
+          "Section": "Overall",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "Quants",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "VA-RC",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "DI-LR",
+          "2023": "99",
+          "2024": "99"
+        }
+      ]
+    },
+    {
+      "type": "course_cutoff",
+      "course_name": "Master of Business Administration (MBA) - IIM Ahmedabad : CAT percentile Cutoff (General-All India)",
+      "cutoff_table": [
+        {
+          "Section": "Overall",
+          "2022": "99",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "Quants",
+          "2022": "99",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "VA-RC",
+          "2022": "99",
+          "2023": "99",
+          "2024": "99"
+        },
+        {
+          "Section": "DI-LR",
+          "2022": "99",
+          "2023": "99",
+          "2024": "99"
+        }
+      ]
+    }
+  ],
+  "ranking": [
+    {
+      "type": "international_ranking",
+      "title": "IIM Ahmedabad International Ranking 2023",
+      "description": [
+        "The QS World University Ranking, Financial Times, etc. have ranked IIM Ahmedabad for its Management stream. As per the QS World University Ranking 2024, it was observed that the institute has drastically improved its position when compared with the previous years in the Subject category. However, it lost its position under the 'Masters in Management' category. IIM Ahmedabad rank has shown a decreasing trend on the ranking scale of the Financial Times Ranking when compared with the current year and 2021 (the institute was not ranked in 2022) in the Masters in Management category.",
+        "Candidates can refer to the IIM Ahmedabad international ranking table below for a more detailed overview:",
+        "IIM Ahmedabad International Ranking 2023",
+        "QS World Ranking 2023",
+        "2022",
+        "2023",
+        "2024",
+        "By Subject (Business & Management Studies)",
+        "65",
+        "53",
+        "22",
+        "Masters in Management",
+        "29",
+        "29",
+        "42",
+        "Financial Times Ranking 2023",
+        "2021",
+        "2022",
+        "2023",
+        "Masters in Management",
+        "26",
+        "NA",
+        "43",
+        "MBA",
+        "48",
+        "62",
+        "51",
+        "Executive Education",
+        "NA",
+        "50",
+        "45"
+      ],
+      "tables": [
+        [
+          [
+            "IIM Ahmedabad International Ranking 2023"
+          ],
+          [
+            "QS World Ranking 2023",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          [
+            "By Subject (Business & Management Studies)",
+            "65",
+            "53",
+            "22"
+          ],
+          [
+            "Masters in Management",
+            "29",
+            "29",
+            "42"
+          ],
+          [
+            "Financial Times Ranking 2023",
+            "2021",
+            "2022",
+            "2023"
+          ],
+          [
+            "Masters in Management",
+            "26",
+            "NA",
+            "43"
+          ],
+          [
+            "MBA",
+            "48",
+            "62",
+            "51"
+          ],
+          [
+            "Executive Education",
+            "NA",
+            "50",
+            "45"
+          ]
+        ]
+      ]
+    }
+  ],
+  "ranking_section": {
+    "title": "IIM Ahmedabad NIRF Ranking 2023",
+    "description": "IIM Ahmedabad has been ranked well by the NIRF under the 'Management' category. Following the provided parameters such as Teaching, Graduation Outcome, Inclusivity and Research, the university is ranked in a good position when compared to other universities by the NIRF 2024. In the 'Management' category, the institute's ranks have shown stability in trend as per the previous year's rankings. In 2024, IIM Ahmedabad's rank is #1 , the same as last year's rank in the 'Management' category by the NIR IIM Ahmedabad has been ranked well by the NIRF under the 'Management' category. Following the provided parameters such as Teaching, Graduation Outcome, Inclusivity and Research, the university is ranked in a good position when compared to other universities by the NIRF 2024. In the 'Management' category, the institute's ranks have shown stability in trend as per the previous year's rankings. In 2024, IIM Ahmedabad's rank is #1 , the same as last year's rank in the 'Management' category by the NIRF ranking. Candidates can look at the table below for the IIM Ahmedabad NIRF rankings: According to the NIRF ranking 2024, IIM Ahmedabad ranks #1 in the 'Management' category. It holds a status equivalent to the most prestigious universities for the NIRF 'Management' category rankings. Check the year-wise NIRF comparison analysis of the best institutes in this space: IIM Ahmedabad IIM Bangalore IIM Kozhikode DMS IIT Delhi IIM Lucknow IIM Mumbai IIM Calcutta NIRF ranks institutes based on various criteria such as Teaching, Learning and Resources, Research and Professional Practice, Graduation Outcomes, Outreach and Inclusivity, and Perception. IIM Ahmedabad has received excellent scores in all the criteria. Candidates can refer to the table and image below for a more detailed overview: Ranking Criteria Score Teaching, Learning and Resources 92.55 Research and Professional Practice 63.45 Graduation Outcomes 99.14 Outreach and Inclusivity 69.66 Perception 96.14",
+    "tables": [
+      [
+        {
+          "Category": "MBA/PGDM",
+          "2024": "1",
+          "2025": "1"
+        }
+      ],
+      [
+        [
+          "College Name",
+          "Management 2024"
+        ],
+        [
+          "IIM Ahmedabad - Indian Institute of Management",
+          "1"
+        ],
+        [
+          "IIM Bangalore",
+          "2"
+        ],
+        [
+          "IIM Kozhikode",
+          "3"
+        ]
+      ],
+      [
+        {
+          "College": "IIM Ahmedabad",
+          "Ranking": "1"
+        },
+        {
+          "College": "IIM Bangalore Compare",
+          "Ranking": "2"
+        },
+        {
+          "College": "IIM Kozhikode Compare",
+          "Ranking": "3"
+        },
+        {
+          "College": "DMS IIT Delhi Compare",
+          "Ranking": "4"
+        },
+        {
+          "College": "IIM Lucknow Compare",
+          "Ranking": "5"
+        },
+        {
+          "College": "IIM Mumbai Compare",
+          "Ranking": "6"
+        },
+        {
+          "College": "IIM Calcutta Compare",
+          "Ranking": "7"
+        }
+      ],
+      [
+        {
+          "Ranking Criteria": "Teaching, Learning and Resources",
+          "Score": "92.55"
+        },
+        {
+          "Ranking Criteria": "Research and Professional Practice",
+          "Score": "63.45"
+        },
+        {
+          "Ranking Criteria": "Graduation Outcomes",
+          "Score": "99.14"
+        },
+        {
+          "Ranking Criteria": "Outreach and Inclusivity",
+          "Score": "69.66"
+        },
+        {
+          "Ranking Criteria": "Perception",
+          "Score": "96.14"
+        }
+      ]
+    ]
+  },
+  "ranking_criteria": {
+    "description": "NIRF ranks institutes based on various criteria such as Teaching, Learning and Resources, Research and Professional Practice, Graduation Outcomes, Outreach and Inclusivity, and Perception. IIM Ahmedabad has received excellent scores in all the criteria. Candidates can refer to the table and image below for a more detailed overview:",
+    "table": [
+      {
+        "Ranking Criteria": "Teaching, Learning and Resources",
+        "Score": "92.55"
+      },
+      {
+        "Ranking Criteria": "Research and Professional Practice",
+        "Score": "63.45"
+      },
+      {
+        "Ranking Criteria": "Graduation Outcomes",
+        "Score": "99.14"
+      },
+      {
+        "Ranking Criteria": "Outreach and Inclusivity",
+        "Score": "69.66"
+      },
+      {
+        "Ranking Criteria": "Perception",
+        "Score": "96.14"
+      }
+    ],
+    "images": [
+      "https://images.shiksha.com/mediadata/images/articles/1695234814phpn0nx7j.jpeg"
+    ]
+  },
+  "gallary_page": {
+    "section_title": "Mini Clips",
+    "clips": [
+      {
+        "title": "IIM Ahmedabad Overview",
+        "thumbnail": "https://img.youtube.com/vi/C7T5o3gbSaQ/hqdefault.jpg"
+      },
+      {
+        "title": "IIM Ahmedabad Overview",
+        "thumbnail": "https://img.youtube.com/vi/Gs583OGvT_4/hqdefault.jpg"
+      },
+      {
+        "title": "Is IIM Ahmedabad worth it?",
+        "thumbnail": "https://img.youtube.com/vi/yOpRcH3uPig/hqdefault.jpg"
+      }
+    ]
+  },
+  "hotesl & campus": {
+    "author": "Kanika",
+    "updated_on": "Updated onMar 21, 2024",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "text": [
+          "IIM Ahmedabad Campus is built in the heart of the city. It is spread over 102 acres and is tastefully designed with extensive green spaces . IIMA campus represents the institute’s educational philosophy – critical thinking, orientation to real life, and active intellectual self-reliance. Work on the IIM Ahmedabad campus began in 1962 and was carried out by renowned architect, Louis Kahn . He designed the campus with sustainability in mind. Moreover, the campus has something for everyone with gardens, trails, and playgrounds to sports facilities and meditation nooks and cafes. Read on to learn more about the IIMA campus, hostel, student life, and more."
+        ],
+        "list": [],
+        "images": [],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "IIM Ahmedabad Campus Highlights",
+        "text": [
+          "IIMA campus's key highlight is its sustainability quotient. Green living educates everyone living on the campus on sustainable practices. This is achieved through solar power plants, rainwater harvesting, solid waste management, and nurseries. Find below more highlights of the IIM Ahmedabad campus:",
+          "Library :",
+          "Moreover, the IIMA restoration project encircles around the restoration, conservation, and repair management of Louis I Kahn buildings for the classroom complex, Vikram Sarabhai library campus, 18 dormitories buildings, and faculty blocks.",
+          "Hostel Building :"
+        ],
+        "list": [
+          "Auditoriums",
+          "Academic Block",
+          "Administrative Block",
+          "Student Housing",
+          "Faculty Housing",
+          "Gym & Yoga Room",
+          "Outdoor & Indoor Sports"
+        ],
+        "images": [
+          "https://images.shiksha.com/mediadata/images/articles/1694510577phppjxO2A.jpeg",
+          "https://images.shiksha.com/mediadata/images/articles/1694510611phpJuSA02.jpeg"
+        ],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "IIM Ahemdabad Hostel",
+        "text": [
+          "IIM-A student housing is inclusive of 25 understudy apartments with an overall capacity of 740 occupants. Additionally, single-room dormitories are also available for married students. In the student dorms, each floor has 10 single rooms along with a dining area. Further, the single-room dorms buildings house common areas, and sometimes snack outlets as well. Moreover, shared and single-occupancy rooms are available for both Boys and Girls."
+        ],
+        "list": [],
+        "images": [],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "IIM Ahmedabad Hostel Facilities",
+        "text": [
+          "The facilities available in the IIM-A hostels are listed below:"
+        ],
+        "list": [
+          "Both vegetarian and non-vegetarian meals",
+          "Telephone connection",
+          "Dorms with TV, washing machine, refrigerator",
+          "Single occupancy and shared-rooms"
+        ],
+        "images": [],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "IIM Ahmedabad Hostel Fee",
+        "text": [
+          "The hostel fee is added to the total course fee during the IIM-A admission process . Candidates can refer to the following table for fee details:",
+          "NOTE: The fee mentioned here is as per an unofficial source. Hence, is indicative."
+        ],
+        "list": [],
+        "images": [],
+        "videos": [],
+        "tables": [
+          [
+            {
+              "Component": "Caution deposit",
+              "Fee": "INR 5,000"
+            },
+            {
+              "Component": "Total hostel fee",
+              "Fee": "INR 1.71 lakh"
+            }
+          ]
+        ]
+      },
+      {
+        "heading": "IIM Ahmedabad v/s Other IIMs: Hostel Comparison",
+        "text": [
+          "A comparison between the hostel facilities of some of the IIMs is presented below based on hostel fee:",
+          "NOTE: The fee is as per an unofficial source. Hence, is indicative."
+        ],
+        "list": [],
+        "images": [],
+        "videos": [],
+        "tables": [
+          [
+            {
+              "Institute Name": "IIM Ahmedabad",
+              "Hostel Fee": "INR 1.76 lakh"
+            },
+            {
+              "Institute Name": "IIM Bangalore",
+              "Hostel Fee": "INR 80,000 (plus INR 30,000 mess charges/month)"
+            },
+            {
+              "Institute Name": "IIM Calcutta",
+              "Hostel Fee": "INR 1.8 lakh"
+            }
+          ]
+        ]
+      },
+      {
+        "heading": "IIM Ahmedabad Hostel Life",
+        "text": [
+          "The hostel life at IIM Ahmedabad allows candidates to collaborate with each other and share ideas. With the sports facilities and more on-campus facilities, a candidate gets a breather between studies. Check out the following video to get an idea about how is life at IIM-A:"
+        ],
+        "list": [],
+        "images": [],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "IIM Ahmedabad Library",
+        "text": [
+          "IIM-A library is named after the founder of the institute: Dr. Vikram Sarabhai. It is counted as one of the best Management libraries in Asia. Students get a plethora of material to study and learn from. The Vikram Sarabhai Library (VSL) houses over 2 lakh books, 3 lakh e-books, 165+ databases along with e-newspapers, thesis, working papers, and more. Moreover, it is open 24x7 and ensures user-friendly access."
+        ],
+        "list": [],
+        "images": [
+          "https://images.shiksha.com/mediadata/images/articles/1694510359phpHmY9Kp.jpeg"
+        ],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "IIM Ahmedabad Sports Facilities",
+        "text": [
+          "IIM Ahmedabad facilitates various sports facilities through indoor and outdoor courts, along with multiple gymnasiums and yoga studios. The outdoor sports facilities available include cricket ground, volleyball court, football field, and cycling track. Additionally, the indoor sports facilities available are a swimming pool, snooker room, squash courts, indoor badminton court, and multiple board games.",
+          "Check out the below images for some of the sports facilities:",
+          "Gym:"
+        ],
+        "list": [],
+        "images": [
+          "https://images.shiksha.com/mediadata/images/articles/1694510411phpTTfjlB.jpeg",
+          "https://images.shiksha.com/mediadata/images/articles/1694510438php7tg7nL.jpeg",
+          "https://images.shiksha.com/mediadata/images/articles/1694510489phpi5QGdL.jpeg"
+        ],
+        "videos": [],
+        "tables": []
+      },
+      {
+        "heading": "Places to visit in & around the IIM Ahmedabad Campus",
+        "text": [
+          "IIM-A campus is located in Vastrapur. From the IIM Ahmedabad campus, there are various places that students of IIM-A can visit, including Harappan sites, Jain temples, ancient Buddhist caves, and more. Further, more hangout places near the campus are:",
+          "Check out more on IIM Ahmedabad in the below video:"
+        ],
+        "list": [
+          "Vastrapur Lake",
+          "Drive-in Cinema",
+          "Parimal Garden",
+          "Himalayan Mall"
+        ],
+        "images": [],
+        "videos": [],
+        "tables": []
+      }
+    ]
+  },
+  "hotel campus infrastructure": {
+    "section": "Infrastructure/Facilities",
+    "facilities": [
+      {
+        "name": "Library",
+        "description": "IIM Ahmedabad Vikram Sarabhai Library has a collection of over 1,94,704 books, 19815 online and 146 print journals, 46,024 bound volumes, 2624 working papers, 349 thesis, 2187 student's project reports. It offers access to current, global and relevant information in various formats (print & non-print) to serve the information needs of the academic fraternity. The strength of the library is its digital collection of 71 databases, accessible from any networked computer within the campus which provides scholarly, company and industry information. Open carrels are provided in the stack area for individual study. IIMA library provides specialized tools like EBSCO Discovery. It also provides RemoteXS facility to current students and faculty.",
+        "details": {}
+      },
+      {
+        "name": "Cafeteria",
+        "description": "Indian Institute of Management, Ahmedabad has different cafes functioning on the campus such as TANSTAAFL CAFE, Food King, Coffee Express outlet. Institute also have mess facility for the students getting admission in different courses.",
+        "details": {}
+      },
+      {
+        "name": "Hostel",
+        "description": "IIM- A has 25 student dormitories with a total capacity to hold about 740 occupants. Apart from the dormitories, there are separate housing facilities available for married candidates. The dorms have ten single rooms on each floor arranged around a stairway and a tearoom. Both vegetarian and non-vegetarian meals are served. The rooms are fully furnished including a telephone connection. The dorms also have a T.V., washing machine and refrigerator.",
+        "available_facilities": [
+          "Boys Hostel",
+          "Single Occupancy",
+          "Shared Rooms",
+          "In-Campus Hostel",
+          "Girls Hostel",
+          "Single Occupancy",
+          "Shared Rooms",
+          "In-Campus Hostel"
+        ]
+      },
+      {
+        "name": "Sports Complex",
+        "available_facilities": [
+          "Badminton Court",
+          "Basketball Court",
+          "Cricket Ground",
+          "Football Ground",
+          "Squash Court",
+          "Tennis Court",
+          "Volleyball Court",
+          "Table Tennis"
+        ]
+      },
+      {
+        "name": "Labs",
+        "available_facilities": [
+          "Computer Lab",
+          "Clinical Lab",
+          "FPM Lab"
+        ]
+      },
+      {
+        "name": "Other Major Facilities",
+        "list": [
+          "Gym",
+          "Hospital / Medical Facilities",
+          "Wi-Fi Campus",
+          "Auditorium",
+          "Music Room",
+          "A/C Classrooms"
+        ]
+      }
+    ],
+    "other_facilities": [
+      "Seminar Rooms",
+      "Conference Rooms",
+      "Amphitheater",
+      "Syndicate Rooms",
+      "Convention Center",
+      "International Management Development Center",
+      "Dinning Hall",
+      "ATM",
+      "Post Office",
+      "Research Centers"
+    ]
+  }
+}
