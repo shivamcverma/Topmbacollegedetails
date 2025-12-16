@@ -2583,7 +2583,7 @@
       "https://images.shiksha.com/mediadata/images/articles/1695234814phpn0nx7j.jpeg"
     ]
   },
-  "gallary_page": {
+  "gallery_page": {
     "section_title": "Mini Clips",
     "clips": [
       {
@@ -2600,7 +2600,7 @@
       }
     ]
   },
-  "hotesl & campus": {
+  "hostel_campus": {
     "author": "Kanika",
     "updated_on": "Updated onMar 21, 2024",
     "sections": [
@@ -2767,7 +2767,7 @@
       }
     ]
   },
-  "hotel campus infrastructure": {
+  "infrastructure": {
     "section": "Infrastructure/Facilities",
     "facilities": [
       {

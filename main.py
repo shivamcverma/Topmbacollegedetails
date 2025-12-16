@@ -1106,36 +1106,36 @@ def scrape_infrastructure_structured(driver):
 
 
 # ---------------- RUN ----------------
-if __name__ == "__main__":
+def scrape_mba_colleges():
     driver = create_driver()
-
-    driver.get(REVIEWS_URL)
     time.sleep(3)
 
-    
+    try:
+        data = {
+            "courses": scrape_courses(driver),
+            "fees": scrape_fees(driver),
+            "review_summary": scrape_review_summary(driver),
+            "reviews": scrape_reviews(driver),
+            "admission": scrape_admission_overview(driver),
+            "eligibility_selection": scrape_admission_eligibility_selection(driver),
+            "placement_report": scrape_placement_report(driver),
+            "average_package": scrape_average_package_section(driver),
+            "placements_faqs": scrape_placement_faqs(driver),
+            "cut_off": scrape_cutoff(driver),
+            "ranking": scrape_ranking(driver),
+            "ranking_section": scrape_ranking_section(driver),
+            "ranking_criteria": parse_ranking_criteria_html(driver),
+            "gallery_page": scrape_mini_clips(driver),
+            "hostel_campus": scrape_hostel_campus_structured(driver),
+            "infrastructure": scrape_infrastructure_structured(driver)
+        }
+        return data
 
+    finally:
+        driver.quit()
 
-    data = {
-    "courses": scrape_courses(driver),
-    "fees": scrape_fees(driver),
-    "review_summary": scrape_review_summary(driver),
-    "reviews": scrape_reviews(driver),
-    "admission": scrape_admission_overview(driver),
-    "eligibility_selection": scrape_admission_eligibility_selection(driver),
-    "placement_report": scrape_placement_report(driver),
-    "average_package": scrape_average_package_section(driver),
-    "placements_faqs": scrape_placement_faqs(driver),
-    "cut_off":scrape_cutoff(driver),
-    "ranking":scrape_ranking(driver),
-    "ranking_section":scrape_ranking_section(driver),
-    "ranking_criteria":parse_ranking_criteria_html(driver),
-    "gallary_page":scrape_mini_clips(driver),
-    "hotesl & campus":scrape_hostel_campus_structured(driver),
-    "hotel campus infrastructure":scrape_infrastructure_structured(driver)
-
-   }
-
-    driver.quit()
+if __name__ == "__main__":
+    data = scrape_mba_colleges()
 
     with open("iim_ahmedabad_full_data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

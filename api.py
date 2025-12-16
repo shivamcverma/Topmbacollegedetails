@@ -1,75 +1,54 @@
 from fastapi import FastAPI, HTTPException
-import json, os, threading
-from apscheduler.schedulers.background import BackgroundScheduler
+import json, os, time
 from datetime import datetime
 
-
-
-# ✅ Import your scraper function from main.py
-from main import scrape_mba_colleges  # Make sure this function returns the structured JSON
+from main import scrape_mba_colleges   # 🔥 MASTER FUNCTION
 
 app = FastAPI(title="MBA Colleges API")
-DATA_FILE = "mba_data.json"
 
-# -------------------------
-# 1️⃣ Load data from JSON
-# -------------------------
+DATA_FILE = "mba_data.json"
+LAST_UPDATED = 0
+UPDATE_INTERVAL = 6 * 60 * 60   # 6 hours
+
+
 def load_data():
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
-    return []
+    return None
 
-# -------------------------
-# 2️⃣ Function to update data
-# -------------------------
-def update_data():
-    """
-    Calls the scraper in main.py and updates mba_data.json
-    """
-    try:
-        print(f"[{datetime.now()}] Starting data update...")
-        data = scrape_mba_colleges()  # your function in main.py
+
+def update_data_if_needed():
+    global LAST_UPDATED
+
+    if not os.path.exists(DATA_FILE) or (time.time() - LAST_UPDATED > UPDATE_INTERVAL):
+        print(f"[{datetime.now()}] 🔄 Scraping started")
+        data = scrape_mba_colleges()
+
         with open(DATA_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-        print(f"[{datetime.now()}] Data updated successfully!")
-    except Exception as e:
-        print(f"[{datetime.now()}] Error updating data: {e}")
+            json.dump(data, f, indent=2, ensure_ascii=False)
 
-# -------------------------
-# 3️⃣ FastAPI Endpoints
-# -------------------------
+        LAST_UPDATED = time.time()
+        print(f"[{datetime.now()}] ✅ Scraping done")
+
+
 @app.get("/")
-async def root():
-    return {"message": "API is running! Go to /mba_colleges to see all colleges."}
+def root():
+    return {"message": "MBA API is running 🚀"}
+
 
 @app.get("/mba_colleges")
-async def get_all_colleges():
-    return {"mba_colleges": load_data()}
+def get_all_data():
+    update_data_if_needed()
+    return load_data()
 
-@app.get("/mba_colleges/{college_id}")
-async def get_college_by_id(college_id: int):
+
+@app.get("/mba_colleges/{section}")
+def get_section(section: str):
+    update_data_if_needed()
     data = load_data()
-    idx = 1
-    for section in data:
-        for college in section.get("colleges", []):
-            if idx == college_id:
-                return college
-            idx += 1
-    raise HTTPException(status_code=404, detail="College not found")
 
-# -------------------------
-# 4️⃣ Scheduler to auto-update every 6 hours
-# -------------------------
-def start_scheduler():
-    scheduler = BackgroundScheduler()
-    scheduler.add_job(update_data, 'interval', hours=6)  # run every 6 hours
-    scheduler.start()
+    if section not in data:
+        raise HTTPException(status_code=404, detail="Section not found")
 
-# Run scheduler in a separate daemon thread
-threading.Thread(target=start_scheduler, daemon=True).start()
-
-# -------------------------
-# 5️⃣ Optional: initial update at startup
-# -------------------------
-update_data()
+    return data[section]
