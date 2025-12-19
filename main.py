@@ -5,10 +5,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
+# from selenium.common.exceptions.TimeoutException
+
 import json, time
 from webdriver_manager.chrome import ChromeDriverManager
+import re
 
-
+COLLEGE_INFO_URL ="https://www.shiksha.com/college/iim-ahmedabad-indian-institute-of-management-vastrapur-307"
 COURSES_URL = "https://www.shiksha.com/college/iim-ahmedabad-indian-institute-of-management-vastrapur-307/courses"
 FEES_URL = "https://www.shiksha.com/college/iim-ahmedabad-indian-institute-of-management-vastrapur-307/fees"
 REVIEWS_URL = "https://www.shiksha.com/college/iim-ahmedabad-indian-institute-of-management-vastrapur-307/reviews"
@@ -37,26 +40,393 @@ def create_driver():
     )
 
 
-# ---------------- COURSES ----------------
+
+def scrape_college_info(driver):
+    driver.get(COLLEGE_INFO_URL)
+    wait = WebDriverWait(driver, 30)
+    data = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+        "highlights": {
+            "summary": None,
+            "table": [],
+            
+        }
+    }
+
+    # ================= COVER IMAGE =================
+    section = wait.until(
+        EC.presence_of_element_located((By.ID, "topHeaderCard-top-section"))
+    )
+
+    img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+    data["college_name"] = img.get_attribute("alt")
+    data["cover_image"] = img.get_attribute("src")
+
+    badges = section.find_elements(By.CLASS_NAME, "b8cb")
+    for badge in badges:
+        text = badge.text.lower()
+        if "video" in text:
+            data["videos_count"] = int(re.search(r"\d+", text).group())
+        elif "photo" in text:
+            data["photos_count"] = int(re.search(r"\d+", text).group())
+
+    # ================= HEADER CARD =================
+    header = wait.until(
+        EC.presence_of_element_located((By.ID, "top-header-card-heading"))
+    )
+
+    try:
+        data["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+    except:
+        pass
+
+    try:
+        data["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+    except:
+        pass
+
+    try:
+        loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+        if "," in loc:
+            data["location"], data["city"] = [x.strip() for x in loc.split(",", 1)]
+        else:
+            data["location"] = loc
+    except:
+        pass
+
+    try:
+        rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+        match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+        if match:
+            data["rating"] = match.group(1)
+    except:
+        pass
+
+    try:
+        reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+        data["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+    except:
+        pass
+
+    try:
+        qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+        num = re.search(r"[\d.]+", qa_text).group()
+        data["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+    except:
+        pass
+
+    try:
+        items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+        for item in items:
+            txt = item.text.lower()
+            if "institute" in txt:
+                data["institute_type"] = item.text.strip()
+            elif "estd" in txt:
+                year = re.search(r"\d{4}", item.text)
+                if year:
+                    data["established_year"] = year.group()
+    except:
+        pass
+
+
+        # 🔹 Highlights Table
+# ================= HIGHLIGHTS SECTION (JS SAFE) =================
+    try:
+        highlights = wait.until(
+            EC.presence_of_element_located((By.ID, "ovp_section_highlights"))
+        )
+    
+        # 🔹 SUMMARY (already OK, JS se bhi safe)
+        summary = driver.execute_script("""
+            let el = document.querySelector('#EdContent__ovp_section_highlights');
+            if (!el) return null;
+            let ps = el.querySelectorAll('p');
+            let out = [];
+            ps.forEach(p => {
+                let t = p.innerText.trim();
+                if (t.length > 30) out.push(t);
+            });
+            return out.join("\\n");
+        """)
+        data["highlights"]["summary"] = summary
+    
+    
+        # 🔹 TABLE (MAIN FIX)
+        table_data = driver.execute_script("""
+            let table = document.querySelector('#EdContent__ovp_section_highlights table');
+            if (!table) return [];
+    
+            let rows = table.querySelectorAll('tr');
+            let result = [];
+    
+            rows.forEach((row, idx) => {
+                if (idx === 0) return; // skip header
+                let cols = row.querySelectorAll('td');
+                if (cols.length >= 2) {
+                    let key = cols[0].innerText.trim();
+                    let val = cols[1].innerText.trim();
+                    if (key || val) {
+                        result.push({
+                            particular: key,
+                            details: val
+                        });
+                    }
+                }
+            });
+            return result;
+        """)
+        data["highlights"]["table"] = table_data
+    
+    except Exception as e:
+        print("Highlights error:", e)
+    
+    
+
+    return data
+
+def scrape_college_infopro(driver):
+    driver.get(COLLEGE_INFO_URL)
+    wait = WebDriverWait(driver, 30)
+
+    popular = {
+        "intro": None,
+        "courses": [],
+        "faqs": []
+    }
+
+    # ================= SECTION WAIT =================
+    wait.until(
+        EC.presence_of_element_located(
+            (By.ID, "ovp_section_popular_courses")
+        )
+    )
+
+    # ================= INTRO / SUMMARY =================
+    popular["intro"] = driver.execute_script("""
+       let el = document.querySelector('#EdContent__ovp_section_popular_courses');
+       if (!el) return null;
+   
+       let ps = el.querySelectorAll('p');
+       let out = [];
+   
+       ps.forEach(p => {
+           let t = p.textContent.replace(/\\s+/g, ' ').trim();
+           if (t.length > 20) out.push(t);
+       });
+   
+       return out.join("\\n");
+       """)
+
+    # ================= COURSES (FIXED) =================
+    courses = driver.execute_script("""
+        let result = [];
+
+        document.querySelectorAll('div.base_course_tuple > div[id^="tuple_"]').forEach(tuple => {
+
+            let course = {};
+
+            // name + url
+            let h3 = tuple.querySelector('h3');
+            course.course_name = h3 ? h3.innerText.trim() : null;
+            course.course_url = h3 ? h3.closest('a')?.href : null;
+
+            // duration
+            let spans = tuple.querySelectorAll('.edfa span');
+            course.duration = spans.length > 1 ? spans[1].innerText.trim() : null;
+
+            // rating + reviews
+            let ratingBlock = tuple.querySelector('a[href*="reviews"]');
+            if (ratingBlock) {
+                course.rating = ratingBlock.querySelector('span')?.innerText.trim() || null;
+                let r = ratingBlock.querySelector('.e040');
+                course.reviews = r ? r.innerText.replace(/[()]/g, '') : null;
+            }
+
+            // ranking
+            course.ranking =
+                tuple.querySelector('.ba04')?.innerText.trim() || null;
+
+            // ===== EXAMS ACCEPTED (SAFE) =====
+            course.exams = [];
+            tuple.querySelectorAll('label').forEach(label => {
+                if (label.innerText.includes('Exams Accepted')) {
+                    let ul = label.parentElement.querySelector('ul');
+                    if (ul) {
+                        ul.querySelectorAll('a').forEach(a => {
+                            course.exams.push(a.innerText.trim());
+                        });
+                    }
+                }
+            });
+
+            // ===== FEES =====
+            course.fees = null;
+            tuple.querySelectorAll('label').forEach(label => {
+                if (label.innerText.includes('Total Tuition Fees')) {
+                    let div = label.parentElement.querySelector('div');
+                    if (div) {
+                        course.fees = div.innerText.replace('Get Fee Details', '').trim();
+                    }
+                }
+            });
+
+            // ===== SALARY / PLACEMENT =====
+            course.median_salary = null;
+            tuple.querySelectorAll('label').forEach(label => {
+                if (
+                    label.innerText.includes('Median Salary') ||
+                    label.innerText.includes('Placement Rating')
+                ) {
+                    let span = label.parentElement.querySelector('span');
+                    if (span) {
+                        course.median_salary = span.innerText.trim();
+                    }
+                }
+            });
+
+            result.push(course);
+        });
+
+        return result;
+    """)
+    popular["courses"] = courses
+
+    # ================= FAQs =================
+    faqs = driver.execute_script("""
+        let faqs = [];
+        document.querySelectorAll('#sectional-faqs-0 strong').forEach(q => {
+            let question = q.innerText.replace('Q:', '').trim();
+            let ansBox = q.parentElement.nextElementSibling;
+            let answer = ansBox ? ansBox.innerText.replace('A:', '').trim() : "";
+            if (question) {
+                faqs.push({ question, answer });
+            }
+        });
+        return faqs;
+    """)
+    popular["faqs"] = faqs
+
+    return popular
+
+
+
+
+
+
+
 def scrape_courses(driver):
-    result = []
+    # ---------- COLLEGE INFO ----------
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
 
     driver.get(COURSES_URL)
     wait = WebDriverWait(driver, 20)
 
-    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table._1708")))
+    # ---------- COVER IMAGE ----------
+    section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+    img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+    college_info["college_name"] = img.get_attribute("alt")
+    college_info["cover_image"] = img.get_attribute("src")
 
+    badges = section.find_elements(By.CLASS_NAME, "b8cb")
+    for badge in badges:
+        text = badge.text.lower()
+        if "video" in text:
+            college_info["videos_count"] = int(re.search(r"\d+", text).group())
+        elif "photo" in text:
+            college_info["photos_count"] = int(re.search(r"\d+", text).group())
+
+    # ---------- HEADER CARD ----------
+    header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+    try:
+        college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+    except:
+        pass
+
+    try:
+        college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+    except:
+        pass
+
+    try:
+        loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+        if "," in loc:
+            college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+        else:
+            college_info["location"] = loc
+    except:
+        pass
+
+    try:
+        rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+        match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+        if match:
+            college_info["rating"] = match.group(1)
+    except:
+        pass
+
+    try:
+        reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+        college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+    except:
+        pass
+
+    try:
+        qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+        num = re.search(r"[\d.]+", qa_text).group()
+        college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+    except:
+        pass
+
+    try:
+        items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+        for item in items:
+            txt = item.text.lower()
+            if "institute" in txt:
+                college_info["institute_type"] = item.text.strip()
+            elif "estd" in txt:
+                year = re.search(r"\d{4}", item.text)
+                if year:
+                    college_info["established_year"] = year.group()
+    except:
+        pass
+
+    # ---------- SCROLL FUNCTION ----------
     def scroll_to_bottom(driver, scroll_times=3, pause=1.5):
- 
-       for _ in range(scroll_times):
+        for _ in range(scroll_times):
             driver.execute_script("window.scrollBy(0, document.body.scrollHeight);")
             time.sleep(pause)
-    driver.get(COURSES_URL)
-    scroll_to_bottom(driver, scroll_times=3, pause=2)  # Courses page ke liye scroll
 
+    scroll_to_bottom(driver, scroll_times=3, pause=2)
 
+    # ---------- COURSES ----------
     soup = BeautifulSoup(driver.page_source, "html.parser")
     rows = soup.select("table._1708 tbody tr")
+    courses = []
 
     for row in rows:
         cols = row.find_all("td")
@@ -72,57 +442,247 @@ def scrape_courses(driver):
         if len(cols) > 2:
             grad = cols[2].find("span", string=lambda x: x and "Graduation" in x)
             if grad:
-                eligibility["graduation"] = grad.find_next("span").get_text(strip=True)
+                next_span = grad.find_next("span")
+                if next_span:
+                    eligibility["graduation"] = next_span.get_text(strip=True)
 
             exams = [a.get_text(strip=True) for a in cols[2].select("a")]
             if exams:
                 eligibility["exams"] = exams
 
-        result.append({
+        courses.append({
             "course_name": course_name,
             "fees": fees,
             "eligibility": eligibility
         })
 
-    return result
+    return {"college_info": college_info, "courses": courses}
 
 
-# ---------------- FEES ----------------
+# # ---------------- FEES ----------------
+
 def scrape_fees(driver):
-    fees_data = []
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
 
     driver.get(FEES_URL)
     wait = WebDriverWait(driver, 20)
 
-    wait.until(EC.presence_of_element_located(
-        (By.CSS_SELECTOR, "table.table._26d3"))
-    )
+    # ---------- COLLEGE HEADER ----------
+    try:
+        section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+        img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+        college_info["college_name"] = img.get_attribute("alt")
+        college_info["cover_image"] = img.get_attribute("src")
 
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(2)
+        badges = section.find_elements(By.CLASS_NAME, "b8cb")
+        for badge in badges:
+            text = badge.text.lower()
+            if "video" in text:
+                college_info["videos_count"] = int(re.search(r"\d+", text).group())
+            elif "photo" in text:
+                college_info["photos_count"] = int(re.search(r"\d+", text).group())
+    except:
+        print("⚠️ Top header section not found")
 
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    rows = soup.select("table.table._26d3 tbody tr")
+    # ---------- HEADER CARD DETAILS ----------
+    try:
+        header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
 
-    for row in rows:
-        course_a = row.select_one("td:nth-child(1) a")
-        fee_div = row.select_one("td:nth-child(2) div.getFeeDetailsCTA__text")
+        try:
+            college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+        except:
+            pass
 
-        if not course_a or not fee_div:
-            continue
+        try:
+            college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
 
-        fees = fee_div.get_text(" ", strip=True).replace("Get Fee Details", "").strip()
+        try:
+            loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+            if "," in loc:
+                college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+            else:
+                college_info["location"] = loc
+        except:
+            pass
 
-        fees_data.append({
-            "course": course_a.get_text(strip=True),
-            "total_tuition_fees": fees
-        })
+        try:
+            rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+            match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+            if match:
+                college_info["rating"] = match.group(1)
+        except:
+            pass
 
-    return fees_data
+        try:
+            reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+            college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+        except:
+            pass
 
+        try:
+            qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+            num = re.search(r"[\d.]+", qa_text).group()
+            college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+        except:
+            pass
 
-# ---------------- REVIEW SUMMARY ----------------
+        try:
+            items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+            for item in items:
+                txt = item.text.lower()
+                if "institute" in txt:
+                    college_info["institute_type"] = item.text.strip()
+                elif "estd" in txt:
+                    year = re.search(r"\d{4}", item.text)
+                    if year:
+                        college_info["established_year"] = year.group()
+        except:
+            pass
+
+    except:
+        print("⚠️ Header card not found")
+
+    # ---------- FEES TABLE ----------
+    fees_data = []
+
+    try:
+        # Scroll to bottom to load table
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+
+        # Wait for table if it exists
+        try:
+            table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table._26d3")))
+        except:
+            print("⚠️ Fees table not found")
+            return {"college_info": college_info, "fees_data": []}
+
+        # Parse table with BeautifulSoup
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        rows = soup.select("table._26d3 tbody tr")
+
+        for row in rows:
+            course_a = row.select_one("td:nth-child(1) a")
+            fee_div = row.select_one("td:nth-child(2) div.getFeeDetailsCTA__text")
+
+            if not course_a or not fee_div:
+                continue
+
+            fees = fee_div.get_text(" ", strip=True).replace("Get Fee Details", "").strip()
+            fees_data.append({
+                "course": course_a.get_text(strip=True),
+                "total_tuition_fees": fees
+            })
+
+    except Exception as e:
+        print(f"⚠️ Error scraping fees table: {e}")
+
+    return {"college_info": college_info, "fees_data": fees_data}
+# # ---------------- REVIEW SUMMARY ----------------
 def scrape_review_summary(driver):
+
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(REVIEWS_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COVER IMAGE ----------
+    section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+    img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+    college_info["college_name"] = img.get_attribute("alt")
+    college_info["cover_image"] = img.get_attribute("src")
+
+    badges = section.find_elements(By.CLASS_NAME, "b8cb")
+    for badge in badges:
+        text = badge.text.lower()
+        if "video" in text:
+            college_info["videos_count"] = int(re.search(r"\d+", text).group())
+        elif "photo" in text:
+            college_info["photos_count"] = int(re.search(r"\d+", text).group())
+
+    # ---------- HEADER CARD ----------
+    header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+    try:
+        college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+    except:
+        pass
+
+    try:
+        college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+    except:
+        pass
+
+    try:
+        loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+        if "," in loc:
+            college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+        else:
+            college_info["location"] = loc
+    except:
+        pass
+
+    try:
+        rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+        match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+        if match:
+            college_info["rating"] = match.group(1)
+    except:
+        pass
+
+    try:
+        reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+        college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+    except:
+        pass
+
+    try:
+        qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+        num = re.search(r"[\d.]+", qa_text).group()
+        college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+    except:
+        pass
+
+    try:
+        items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+        for item in items:
+            txt = item.text.lower()
+            if "institute" in txt:
+                college_info["institute_type"] = item.text.strip()
+            elif "estd" in txt:
+                year = re.search(r"\d{4}", item.text)
+                if year:
+                    college_info["established_year"] = year.group()
+    except:
+        pass
     summary = {
         "college_name": "",
         "overall_rating": "",
@@ -174,12 +734,13 @@ def scrape_review_summary(driver):
         if category and rating:
             summary["category_ratings"][category.get_text(strip=True)] = rating.get_text(strip=True)
 
-    return summary
+    return {"college_info":college_info,"summary":summary,}
 
 
 
-# ---------------- REVIEWS ----------------
+# # ---------------- REVIEWS ----------------
 def scrape_reviews(driver):
+    
     reviews = []
 
     driver.get(REVIEWS_URL)
@@ -224,6 +785,93 @@ def scrape_reviews(driver):
     return reviews
 
 def scrape_admission_overview(driver):
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(ADMISSION_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COVER IMAGE ----------
+    section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+    img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+    college_info["college_name"] = img.get_attribute("alt")
+    college_info["cover_image"] = img.get_attribute("src")
+
+    badges = section.find_elements(By.CLASS_NAME, "b8cb")
+    for badge in badges:
+        text = badge.text.lower()
+        if "video" in text:
+            college_info["videos_count"] = int(re.search(r"\d+", text).group())
+        elif "photo" in text:
+            college_info["photos_count"] = int(re.search(r"\d+", text).group())
+
+    # ---------- HEADER CARD ----------
+    header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+    try:
+        college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+    except:
+        pass
+
+    try:
+        college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+    except:
+        pass
+
+    try:
+        loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+        if "," in loc:
+            college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+        else:
+            college_info["location"] = loc
+    except:
+        pass
+
+    try:
+        rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+        match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+        if match:
+            college_info["rating"] = match.group(1)
+    except:
+        pass
+
+    try:
+        reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+        college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+    except:
+        pass
+
+    try:
+        qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+        num = re.search(r"[\d.]+", qa_text).group()
+        college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+    except:
+        pass
+
+    try:
+        items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+        for item in items:
+            txt = item.text.lower()
+            if "institute" in txt:
+                college_info["institute_type"] = item.text.strip()
+            elif "estd" in txt:
+                year = re.search(r"\d{4}", item.text)
+                if year:
+                    college_info["established_year"] = year.group()
+    except:
+        pass
     admission = {
         "title": "",
         "overview_text": "",
@@ -275,7 +923,7 @@ def scrape_admission_overview(driver):
                 "answer": answer
             })
 
-    return admission
+    return {"college_info":college_info,"admission":admission}
 
 def scrape_admission_eligibility_selection(driver):
     data = {
@@ -355,6 +1003,100 @@ def scrape_admission_eligibility_selection(driver):
     return data
 
 def scrape_placement_report(driver):
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(PLACEMENT_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COLLEGE HEADER ----------
+    try:
+        section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+        img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+        college_info["college_name"] = img.get_attribute("alt")
+        college_info["cover_image"] = img.get_attribute("src")
+
+        badges = section.find_elements(By.CLASS_NAME, "b8cb")
+        for badge in badges:
+            text = badge.text.lower()
+            if "video" in text:
+                college_info["videos_count"] = int(re.search(r"\d+", text).group())
+            elif "photo" in text:
+                college_info["photos_count"] = int(re.search(r"\d+", text).group())
+    except:
+        print("⚠️ Top header section not found")
+
+    # ---------- HEADER CARD DETAILS ----------
+    try:
+        header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+        try:
+            college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+        except:
+            pass
+
+        try:
+            college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
+
+        try:
+            loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+            if "," in loc:
+                college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+            else:
+                college_info["location"] = loc
+        except:
+            pass
+
+        try:
+            rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+            match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+            if match:
+                college_info["rating"] = match.group(1)
+        except:
+            pass
+
+        try:
+            reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+            college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+        except:
+            pass
+
+        try:
+            qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+            num = re.search(r"[\d.]+", qa_text).group()
+            college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+        except:
+            pass
+
+        try:
+            items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+            for item in items:
+                txt = item.text.lower()
+                if "institute" in txt:
+                    college_info["institute_type"] = item.text.strip()
+                elif "estd" in txt:
+                    year = re.search(r"\d{4}", item.text)
+                    if year:
+                        college_info["established_year"] = year.group()
+        except:
+            pass
+
+    except:
+        print("⚠️ Header card not found")
     data = {
         "title": "",
         "summary": [],
@@ -427,7 +1169,7 @@ def scrape_placement_report(driver):
                 "tables": tables
             })
 
-    return data
+    return {"college_info":college_info,"data":data}
 
 def scrape_average_package_section(driver):
     data = {
@@ -584,6 +1326,100 @@ def scrape_placement_faqs(driver):
 # ---------------- CUTOFF ----------------
 
 def scrape_cutoff(driver):
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(CUTOFF_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COLLEGE HEADER ----------
+    try:
+        section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+        img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+        college_info["college_name"] = img.get_attribute("alt")
+        college_info["cover_image"] = img.get_attribute("src")
+
+        badges = section.find_elements(By.CLASS_NAME, "b8cb")
+        for badge in badges:
+            text = badge.text.lower()
+            if "video" in text:
+                college_info["videos_count"] = int(re.search(r"\d+", text).group())
+            elif "photo" in text:
+                college_info["photos_count"] = int(re.search(r"\d+", text).group())
+    except:
+        print("⚠️ Top header section not found")
+
+    # ---------- HEADER CARD DETAILS ----------
+    try:
+        header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+        try:
+            college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+        except:
+            pass
+
+        try:
+            college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
+
+        try:
+            loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+            if "," in loc:
+                college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+            else:
+                college_info["location"] = loc
+        except:
+            pass
+
+        try:
+            rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+            match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+            if match:
+                college_info["rating"] = match.group(1)
+        except:
+            pass
+
+        try:
+            reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+            college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+        except:
+            pass
+
+        try:
+            qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+            num = re.search(r"[\d.]+", qa_text).group()
+            college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+        except:
+            pass
+
+        try:
+            items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+            for item in items:
+                txt = item.text.lower()
+                if "institute" in txt:
+                    college_info["institute_type"] = item.text.strip()
+                elif "estd" in txt:
+                    year = re.search(r"\d{4}", item.text)
+                    if year:
+                        college_info["established_year"] = year.group()
+        except:
+            pass
+
+    except:
+        print("⚠️ Header card not found")
     result = []
 
     driver.get(CUTOFF_URL)
@@ -660,9 +1496,103 @@ def scrape_cutoff(driver):
     except Exception as e:
         print("Course container error:", e)
 
-    return result
+    return {"college_info":college_info,"result":result}
 
 def scrape_ranking(driver):
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(RANKING_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COLLEGE HEADER ----------
+    try:
+        section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+        img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+        college_info["college_name"] = img.get_attribute("alt")
+        college_info["cover_image"] = img.get_attribute("src")
+
+        badges = section.find_elements(By.CLASS_NAME, "b8cb")
+        for badge in badges:
+            text = badge.text.lower()
+            if "video" in text:
+                college_info["videos_count"] = int(re.search(r"\d+", text).group())
+            elif "photo" in text:
+                college_info["photos_count"] = int(re.search(r"\d+", text).group())
+    except:
+        print("⚠️ Top header section not found")
+
+    # ---------- HEADER CARD DETAILS ----------
+    try:
+        header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+        try:
+            college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+        except:
+            pass
+
+        try:
+            college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
+
+        try:
+            loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+            if "," in loc:
+                college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+            else:
+                college_info["location"] = loc
+        except:
+            pass
+
+        try:
+            rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+            match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+            if match:
+                college_info["rating"] = match.group(1)
+        except:
+            pass
+
+        try:
+            reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+            college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+        except:
+            pass
+
+        try:
+            qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+            num = re.search(r"[\d.]+", qa_text).group()
+            college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+        except:
+            pass
+
+        try:
+            items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+            for item in items:
+                txt = item.text.lower()
+                if "institute" in txt:
+                    college_info["institute_type"] = item.text.strip()
+                elif "estd" in txt:
+                    year = re.search(r"\d{4}", item.text)
+                    if year:
+                        college_info["established_year"] = year.group()
+        except:
+            pass
+
+    except:
+        print("⚠️ Header card not found")
     result = []
 
     driver.get(RANKING_URL)
@@ -728,7 +1658,7 @@ def scrape_ranking(driver):
         "tables": tables
     })
 
-    return result
+    return {"college_info":college_info,"result":result}
 
 def scrape_ranking_section(driver):
     driver.get(RANKING_URL)
@@ -836,6 +1766,100 @@ def parse_ranking_criteria_html(driver):
     return data
 
 def scrape_mini_clips(driver):
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(GALLARY_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COLLEGE HEADER ----------
+    try:
+        section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+        img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+        college_info["college_name"] = img.get_attribute("alt")
+        college_info["cover_image"] = img.get_attribute("src")
+
+        badges = section.find_elements(By.CLASS_NAME, "b8cb")
+        for badge in badges:
+            text = badge.text.lower()
+            if "video" in text:
+                college_info["videos_count"] = int(re.search(r"\d+", text).group())
+            elif "photo" in text:
+                college_info["photos_count"] = int(re.search(r"\d+", text).group())
+    except:
+        print("⚠️ Top header section not found")
+
+    # ---------- HEADER CARD DETAILS ----------
+    try:
+        header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+        try:
+            college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+        except:
+            pass
+
+        try:
+            college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
+
+        try:
+            loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+            if "," in loc:
+                college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+            else:
+                college_info["location"] = loc
+        except:
+            pass
+
+        try:
+            rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+            match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+            if match:
+                college_info["rating"] = match.group(1)
+        except:
+            pass
+
+        try:
+            reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+            college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+        except:
+            pass
+
+        try:
+            qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+            num = re.search(r"[\d.]+", qa_text).group()
+            college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+        except:
+            pass
+
+        try:
+            items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+            for item in items:
+                txt = item.text.lower()
+                if "institute" in txt:
+                    college_info["institute_type"] = item.text.strip()
+                elif "estd" in txt:
+                    year = re.search(r"\d{4}", item.text)
+                    if year:
+                        college_info["established_year"] = year.group()
+        except:
+            pass
+
+    except:
+        print("⚠️ Header card not found")
     driver.get(GALLARY_URL)
     wait = WebDriverWait(driver, 40)
 
@@ -891,9 +1915,103 @@ def scrape_mini_clips(driver):
         if any(clip_data.values()):
             data["clips"].append(clip_data)
 
-    return data
+    return {"college_info":college_info,"data":data}
 
 def scrape_hostel_campus_structured(driver):
+    college_info = {
+        "college_name": None,
+        "logo": None,
+        "cover_image": None,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": None,
+        "reviews_count": None,
+        "qa_count": None,
+        "location": None,
+        "city": None,
+        "institute_type": None,
+        "established_year": None,
+    }
+
+    driver.get(HOTEL_CAMPUS_URL)
+    wait = WebDriverWait(driver, 20)
+
+    # ---------- COLLEGE HEADER ----------
+    try:
+        section = wait.until(EC.presence_of_element_located((By.ID, "topHeaderCard-top-section")))
+        img = section.find_element(By.ID, "topHeaderCard-gallery-image")
+        college_info["college_name"] = img.get_attribute("alt")
+        college_info["cover_image"] = img.get_attribute("src")
+
+        badges = section.find_elements(By.CLASS_NAME, "b8cb")
+        for badge in badges:
+            text = badge.text.lower()
+            if "video" in text:
+                college_info["videos_count"] = int(re.search(r"\d+", text).group())
+            elif "photo" in text:
+                college_info["photos_count"] = int(re.search(r"\d+", text).group())
+    except:
+        print("⚠️ Top header section not found")
+
+    # ---------- HEADER CARD DETAILS ----------
+    try:
+        header = wait.until(EC.presence_of_element_located((By.ID, "top-header-card-heading")))
+
+        try:
+            college_info["logo"] = header.find_element(By.CSS_SELECTOR, "div.c55b78 img").get_attribute("src")
+        except:
+            pass
+
+        try:
+            college_info["college_name"] = header.find_element(By.TAG_NAME, "h1").text.strip()
+        except:
+            pass
+
+        try:
+            loc = header.find_element(By.CLASS_NAME, "_94eae8").text.strip()
+            if "," in loc:
+                college_info["location"], college_info["city"] = [x.strip() for x in loc.split(",", 1)]
+            else:
+                college_info["location"] = loc
+        except:
+            pass
+
+        try:
+            rating_text = header.find_element(By.CLASS_NAME, "f05f57").text
+            match = re.search(r"([\d.]+)\s*/\s*5", rating_text)
+            if match:
+                college_info["rating"] = match.group(1)
+        except:
+            pass
+
+        try:
+            reviews_text = header.find_element(By.XPATH, ".//a[contains(text(),'Reviews')]").text
+            college_info["reviews_count"] = int(re.search(r"\d+", reviews_text).group())
+        except:
+            pass
+
+        try:
+            qa_text = header.find_element(By.XPATH, ".//a[contains(text(),'Student Q')]").text.lower()
+            num = re.search(r"[\d.]+", qa_text).group()
+            college_info["qa_count"] = int(float(num) * 1000) if "k" in qa_text else int(num)
+        except:
+            pass
+
+        try:
+            items = header.find_elements(By.CSS_SELECTOR, "ul.e1a898 li")
+            for item in items:
+                txt = item.text.lower()
+                if "institute" in txt:
+                    college_info["institute_type"] = item.text.strip()
+                elif "estd" in txt:
+                    year = re.search(r"\d{4}", item.text)
+                    if year:
+                        college_info["established_year"] = year.group()
+        except:
+            pass
+
+    except:
+        print("⚠️ Header card not found")
     driver.get(HOTEL_CAMPUS_URL)
     wait = WebDriverWait(driver, 30)
 
@@ -1013,7 +2131,7 @@ def scrape_hostel_campus_structured(driver):
                 current_section["tables"].append(table_data)
 
     push_section()
-    return result
+    return {"college_info":college_info,"result":result}
 
 def scrape_infrastructure_structured(driver):
   
@@ -1112,22 +2230,41 @@ def scrape_mba_colleges():
 
     try:
         data = {
-            "courses": scrape_courses(driver),
-            "fees": scrape_fees(driver),
-            "review_summary": scrape_review_summary(driver),
-            "reviews": scrape_reviews(driver),
-            "admission": scrape_admission_overview(driver),
-            "eligibility_selection": scrape_admission_eligibility_selection(driver),
-            "placement_report": scrape_placement_report(driver),
-            "average_package": scrape_average_package_section(driver),
-            "placements_faqs": scrape_placement_faqs(driver),
-            "cut_off": scrape_cutoff(driver),
-            "ranking": scrape_ranking(driver),
-            "ranking_section": scrape_ranking_section(driver),
-            "ranking_criteria": parse_ranking_criteria_html(driver),
-            "gallery_page": scrape_mini_clips(driver),
-            "hostel_campus": scrape_hostel_campus_structured(driver),
-            "infrastructure": scrape_infrastructure_structured(driver)
+            "college_info":{
+             "college_info":scrape_college_info(driver),
+             "college_info_program":scrape_college_infopro(driver),
+            },
+            "courses":scrape_courses(driver),
+            "fees":scrape_fees(driver),
+            "reviews":{
+            "review_summary":scrape_review_summary(driver),
+            "reviews":scrape_reviews(driver),
+            },
+            "admission":{
+            "admission":scrape_admission_overview(driver),
+            "eligibility_selection":scrape_admission_eligibility_selection(driver),
+            },
+            "placement":{
+            "placement_report":scrape_placement_report(driver),
+            "average_package":scrape_average_package_section(driver),
+            "placements_faqs":scrape_placement_faqs(driver),
+            },
+            "cut_off":{
+            "cut_off":scrape_cutoff(driver),
+            },
+            "ranking":{
+            "ranking":scrape_ranking(driver),
+            "ranking_section":scrape_ranking_section(driver),
+            "ranking_criteria":parse_ranking_criteria_html(driver),
+            },
+            "gallery":{
+            "gallery_page":scrape_mini_clips(driver),
+            },
+           "hotel_campus":{
+            "hostel_campus":scrape_hostel_campus_structured(driver),
+            "infrastructure":scrape_infrastructure_structured(driver)
+           }
+           
         }
         return data
 
