@@ -3082,5 +3082,408 @@
         "Research Centers"
       ]
     }
+  },
+  "faculty": {
+    "faculty": {
+      "college_info": {
+        "college_name": null,
+        "logo": null,
+        "cover_image": null,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": null,
+        "reviews_count": null,
+        "qa_count": null,
+        "location": null,
+        "city": null,
+        "institute_type": null,
+        "established_year": null
+      },
+      "data": {
+        "author": {
+          "name": "Liyansha Jain",
+          "profile_url": "https://www.shiksha.com/author/Liyansha238964",
+          "verified": true
+        },
+        "last_updated": "Dec 29, 2023",
+        "description": "Faculty at IIM Ahmedabad (Indian Institute of Management, Ahmedabad) are tasked with both doing thorough discipline research and expert instruction. They work together to increase understanding of financial systems, social businesses, consumer behavior, sustainable business practices, and other topics through research centres and academic fields. Some of the IIM Ahmedabad faculty details are mentioned below:",
+        "faculty": [
+          {
+            "faculty_name": "Promila Agarwal",
+            "qualifications": [
+              "PhD, Faculty of Management Studies, University of Delhi, New Delhi",
+              "MA, Applied Psychology, Department of Psychology, University of Delhi, New Delhi",
+              "BA (Hons), Psychology, University of Delhi - (Merit Student of University of Delhi)",
+              "UGC NET Qualified"
+            ]
+          },
+          {
+            "faculty_name": "Saravanan A",
+            "qualifications": [
+              "PhD., International Investment Law, Indian Institute of Technology, Kharagpur",
+              "LLM, Intellectual Property Law, Symbiosis Law School, Pune",
+              "BA, LLB, The Tamil Nadu Dr Ambedkar Law University, Chennai"
+            ]
+          }
+        ]
+      }
+    },
+    "faculty_reviews": {
+      "overall_rating": "4.5",
+      "rating_out_of": "5",
+      "based_on_reviews": "Based on120Verified Reviews",
+      "rating_distribution": [
+        {
+          "rating_range": ">4-5star",
+          "percentage_text": "32%",
+          "percentage_width": "32%"
+        },
+        {
+          "rating_range": ">3-4star",
+          "percentage_text": "10%",
+          "percentage_width": "10%"
+        },
+        {
+          "rating_range": ">2-3star",
+          "percentage_text": "7%",
+          "percentage_width": "7%"
+        },
+        {
+          "rating_range": "1-2star",
+          "percentage_text": "1%",
+          "percentage_width": "1%"
+        }
+      ],
+      "verified_reviews_info": "The Verified badge indicates that the reviewer's details have been verified by Shiksha, and reviewers are bona fide students of this college. These reviews and ratings have been given by students. Shiksha does not endorse the same. Out of 111 published reviews , 57 reviews are verified."
+    },
+    "review_summarisation": {
+      "heading": "What students say about IIM Ahmedabad - Indian Institute of Management",
+      "tabs_data": {
+        "Placements": {
+          "likes": [
+            {
+              "text": "Top recruiting companies for IIM Ahmedabad were Tata Consultancy Services, Boston Consulting Group, Amazon, Axis Bank, Larson and Tubro, Aziz Premji Group, Sunsilk, etc.",
+              "review_count": "(26 Reviews)"
+            },
+            {
+              "text": "The institution maintains an impressive track record in placing its students, with almost all of them landing positions in top-tier companies.",
+              "review_count": "(20 Reviews)"
+            }
+          ],
+          "info_text": "These insights are automatically extracted from student reviews, without any manual intervention"
+        },
+        "Infrastructure": {
+          "likes": [
+            {
+              "text": "The infrastructure of our college is nice, and many facilities are provided to each student.",
+              "review_count": "(31 Reviews)"
+            },
+            {
+              "text": "Food is awesome in this hostel, and the canteen is also good enough all the time.",
+              "review_count": "(24 Reviews)"
+            }
+          ],
+          "info_text": "These insights are automatically extracted from student reviews, without any manual intervention"
+        },
+        "Faculty": {
+          "likes": [
+            {
+              "text": "If you attend every lecture and study throughout the year, then you can easily pass the exam.",
+              "review_count": "(33 Reviews)"
+            },
+            {
+              "text": "The study material provided by the college and faculty is good enough to pass your semester examination and also help throughout your career journey.",
+              "review_count": "(34 Reviews)"
+            }
+          ],
+          "info_text": "These insights are automatically extracted from student reviews, without any manual intervention"
+        },
+        "Other": {
+          "likes": [
+            {
+              "text": "I opted for this course because I want to gain knowledge of management.",
+              "review_count": "(23 Reviews)"
+            },
+            {
+              "text": "In our course, if our college adds live practical marketing things, students also learn much.",
+              "review_count": "(27 Reviews)"
+            }
+          ],
+          "info_text": "These insights are automatically extracted from student reviews, without any manual intervention"
+        }
+      }
+    }
+  },
+  "compare": {
+    "articles": {
+      "college_info": {
+        "college_name": null,
+        "logo": null,
+        "cover_image": null,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": null,
+        "reviews_count": null,
+        "qa_count": null,
+        "location": null,
+        "city": null,
+        "institute_type": null,
+        "established_year": null
+      },
+      "articles": [
+        {
+          "title": "UGC NTA NET December 2025: Exam Schedule (Released), Exam Date (Dec 31 to Jan 7), City Slip, Syllabus & Pattern",
+          "link": "https://www.shiksha.com/sarkari-exams/articles/nta-ugc-net-2025-blogId-184000",
+          "author_name": "Shikha Goyal",
+          "author_link": "https://www.shiksha.com/author/Shikha268477",
+          "date": "Dec 18, 2025",
+          "image": "",
+          "views": "4.5L Views",
+          "comments": ""
+        },
+        {
+          "title": "UGC NET 2025: December Exam Schedule (OUT), City Slip, Admit Card, Syllabus, Pattern & Question Papers",
+          "link": "https://www.shiksha.com/exams/ugc-net-exam",
+          "author_name": "Shikha Goyal",
+          "author_link": "https://www.shiksha.com/author/Shikha268477",
+          "date": "Dec 18, 2025",
+          "image": "",
+          "views": "1.2L Views",
+          "comments": ""
+        },
+        {
+          "title": "CAT 2025 Final Answer Key PDF (OUT) @iimcat.ac.in: Download Official IIM CAT Response Sheet",
+          "link": "https://www.shiksha.com/mba/articles/cat-2025-response-sheet-and-answer-key-pdf-download-blogId-214868",
+          "author_name": "Abhishek Dhawan",
+          "author_link": "https://www.shiksha.com/author/AbhishekDhawan",
+          "date": "Dec 17, 2025",
+          "image": "",
+          "views": "31.7K Views",
+          "comments": ""
+        },
+        {
+          "title": "CAT 2025: Result Soon, Final Answer Key (Released), Result Date, Cutoffs, Top Colleges, Question Paper, Pattern",
+          "link": "https://www.shiksha.com/mba/cat-exam",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 17, 2025",
+          "image": "",
+          "views": "1.1L Views",
+          "comments": ""
+        },
+        {
+          "title": "What to do after CAT Result 2025? Shortlist MBA colleges, Prepare for GD/PI",
+          "link": "https://www.shiksha.com/mba/articles/what-after-cat-result-check-your-options-for-mba-admission-blogId-11797",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 17, 2025",
+          "image": "",
+          "views": "35.5K Views",
+          "comments": "3 Comments"
+        },
+        {
+          "title": "CAT Score vs Percentile 2025 (Expected): Overall & Section-wise Analysis",
+          "link": "https://www.shiksha.com/mba/articles/cat-score-vs-percentile-blogId-19573",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 16, 2025",
+          "image": "",
+          "views": "5L Views",
+          "comments": "1 Comment"
+        },
+        {
+          "title": "IIM Kozhikode Selection Criteria 2026-2028: Check PI Shortlisting Criteria and CAT 2025 Cut Offs",
+          "link": "https://www.shiksha.com/mba/articles/iim-kozhikode-shortlist-admission-criteria-blogId-19289",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 14, 2025",
+          "image": "",
+          "views": "1.4L Views",
+          "comments": "1 Comment"
+        },
+        {
+          "title": "IIM Ahmedabad Admission Criteria 2026-2028: CAT Cut Off Increased to 95 Percentile; Check Details",
+          "link": "https://www.shiksha.com/mba/articles/iim-ahmedabad-admission-criteria-blogId-18477",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 14, 2025",
+          "image": "",
+          "views": "1.6L Views",
+          "comments": "4 Comments"
+        },
+        {
+          "title": "IIM CAT Cut Off 2025: Know Expected and Previous Years' CAT Cutoff Percentile",
+          "link": "https://www.shiksha.com/mba/articles/iim-cut-off-blogId-15090",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 11, 2025",
+          "image": "",
+          "views": "2.9L Views",
+          "comments": "1 Comment"
+        },
+        {
+          "title": "UGC NET Result 2025: Dec Download NTA Scorecard PDF",
+          "link": "https://www.shiksha.com/exams/ugc-net-exam-results",
+          "author_name": "Shikha Goyal",
+          "author_link": "https://www.shiksha.com/author/Shikha268477",
+          "date": "Dec 3, 2025",
+          "image": "",
+          "views": "72.9K Views",
+          "comments": ""
+        },
+        {
+          "title": "List of IIMs in India: Rankings 2025, Courses, Fees & Seat Intake",
+          "link": "https://www.shiksha.com/mba/articles/iims-in-india-blogId-20013",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Oct 6, 2025",
+          "image": "",
+          "views": "1.2M Views",
+          "comments": "9 Comments"
+        },
+        {
+          "title": "IIM MBA Fees for 2025-2027 Batch - Check Complete IIM Fees Structure for MBA",
+          "link": "https://www.shiksha.com/mba/articles/iim-mba-fees-structure-blogId-19877",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Nov 30, 2025",
+          "image": "",
+          "views": "6.6L Views",
+          "comments": "15 Comments"
+        },
+        {
+          "title": "IIM Placements 2025: Highest Salary Package & Top Recruiting Companies",
+          "link": "https://www.shiksha.com/mba/articles/iim-placements-blogId-19907",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Nov 30, 2025",
+          "image": "",
+          "views": "5.7L Views",
+          "comments": "4 Comments"
+        },
+        {
+          "title": "CAT Score vs Percentile 2025 (Expected): Overall & Section-wise Analysis",
+          "link": "https://www.shiksha.com/mba/articles/cat-score-vs-percentile-blogId-19573",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 16, 2025",
+          "image": "",
+          "views": "5L Views",
+          "comments": "1 Comment"
+        },
+        {
+          "title": "MBA Admission 2025-2026: Last Date to Apply, Fees and Selection Process of Top B-Schools",
+          "link": "https://www.shiksha.com/mba/articles/mba-admission-process-selection-procedure-of-top-mba-colleges-blogId-19041",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Nov 29, 2025",
+          "image": "",
+          "views": "4.2L Views",
+          "comments": "9 Comments"
+        },
+        {
+          "title": "IIM Admission Process and Eligibility Criteria 2026: Know How to get Admission in IIMs",
+          "link": "https://www.shiksha.com/mba/articles/iim-shortlist-selection-admission-criteria-blogId-18787",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Nov 30, 2025",
+          "image": "",
+          "views": "3.9L Views",
+          "comments": "9 Comments"
+        },
+        {
+          "title": "IIM Shortlist 2026: Check Cut Offs, Shortlist and Final Admission Status of all IIMs",
+          "link": "https://www.shiksha.com/mba/articles/iim-shortlist-check-cut-offs-shortlist-and-final-admission-status-of-all-iims-blogId-28217",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Nov 30, 2025",
+          "image": "",
+          "views": "3.9L Views",
+          "comments": "6 Comments"
+        },
+        {
+          "title": "IIM CAT Cut Off 2025: Know Expected and Previous Years' CAT Cutoff Percentile",
+          "link": "https://www.shiksha.com/mba/articles/iim-cut-off-blogId-15090",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Dec 11, 2025",
+          "image": "",
+          "views": "2.9L Views",
+          "comments": "1 Comment"
+        },
+        {
+          "title": "Courses offered by IIMs - MBA, PGP, EPG, PGP-FABM, PDGHRM, PGPPM, etc.",
+          "link": "https://www.shiksha.com/mba/articles/mba-courses-offered-by-iims-blogId-19127",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Nov 30, 2025",
+          "image": "",
+          "views": "2.3L Views",
+          "comments": "8 Comments"
+        },
+        {
+          "title": "Online MBA from IIMs - Fees 2025, Reviews, Placements & Scope",
+          "link": "https://www.shiksha.com/mba/articles/distance-mba-from-iims-in-india-blogId-20427",
+          "author_name": "Vipra Shrivastava",
+          "author_link": "https://www.shiksha.com/author/VipraSrivastava",
+          "date": "Sep 28, 2025",
+          "image": "",
+          "views": "1.9L Views",
+          "comments": "8 Comments"
+        }
+      ]
+    }
+  },
+  "scholarships": {
+    "scholarships": {
+      "college_info": {
+        "college_name": null,
+        "logo": null,
+        "cover_image": null,
+        "videos_count": 0,
+        "photos_count": 0,
+        "rating": null,
+        "reviews_count": null,
+        "qa_count": null,
+        "location": null,
+        "city": null,
+        "institute_type": null,
+        "established_year": null
+      },
+      "result": {
+        "author_name": "Liyansha Jain",
+        "author_link": "https://www.shiksha.com/author/Liyansha238964",
+        "updated_on": "Dec 29, 2023",
+        "paragraphs": [
+          "Indian Institute of Management, Ahmedabad provides financial assistance to postgraduate students through the means of scholarships. Among the various available scholarships, IIMA Special Need-Based Scholarships are for those students who got admission to the two-year postgraduate courses (PGP and PGP-FABM) in the year 2022. The student's gross family income must be below INR 15 lakh during the previous financial year. The below-mentioned are some of the scholarships provided by IIM Ahmedabad:",
+          "Note: The above-mentioned are past-year scholarships. For current-year scholarships, please visit the official website of the college.",
+          "Download the IIM Ahmedabad Scholarships Brochure",
+          "Check out more on Indian Institute of Management Scholarships in the below video:"
+        ],
+        "tables": [
+          [
+            [
+              "IIM Ahmedabad Scholarships"
+            ],
+            [
+              "Scholarships offered by Alumni",
+              "Scholarships offered by Companies",
+              "IIMA Exit Scholarships"
+            ],
+            [
+              "IIMA Special Need-Based Scholarships",
+              "Scholarships offered by the Government of India",
+              "-"
+            ]
+          ]
+        ],
+        "pdf_links": [
+          "rd8uSHrTuyEzOSGklqFoV/HgfuSNdsbGyJZerPWBsCwsLucsIJ+84Fz+LylnFSnHYriwth6vFku/LnHyyyj0sAWSzm7MRHxGO7fMRLzZEPLuITAhe6o4zOO/14/uB4YhMTMhcpPfm6s="
+        ],
+        "videos": [
+          "https://www.youtube.com/embed/RnRJkiBctGY"
+        ]
+      }
+    }
   }
 }
